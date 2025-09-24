@@ -18,7 +18,7 @@ DOWNLOAD_DIR = "downloads"
 # Función para crear la carpeta de descargas si no existe
 def create_download_dir():
     os.makedirs(DOWNLOAD_DIR, exist_ok=True)  # Crea la carpeta; si ya existe, no da error
-    logging.info(f"Carpeta '{DOWNLOAD_DIR}' creada o ya existente.")
+    print(f"Carpeta '{DOWNLOAD_DIR}' creada o ya existente.")
 
 # Función para descargar un archivo ZIP, extraerlo y eliminar el ZIP
 def download_and_extract(uri: str):
@@ -33,37 +33,33 @@ def download_and_extract(uri: str):
         with open(filepath, "wb") as f:
             for chunk in response.iter_content(chunk_size=8192):  # Descarga por partes
                 f.write(chunk)  # Escribe cada parte en el archivo
-        logging.info(f"Archivo descargado: {filename}")  # Mensaje de confirmación
+        print(f"Archivo descargado: {filename}")  # Mensaje de confirmación
 
         # Abrir el ZIP y extraer su contenido
         with zipfile.ZipFile(filepath, "r") as zip_ref:
             zip_ref.extractall(DOWNLOAD_DIR)  # Extrae todo en la carpeta de descargas
-        logging.info(f"Archivo extraído: {filename}")  # Mensaje de confirmación
+        print(f"Archivo extraído: {filename}")  # Mensaje de confirmación
 
         os.remove(filepath)  # Elimina el archivo ZIP original
-        logging.info(f"Archivo ZIP eliminado: {filename}")  # Mensaje de confirmación
+        print(f"Archivo ZIP eliminado: {filename}")  # Mensaje de confirmación
 
     # Manejo de errores en caso de problemas de descarga
     except requests.exceptions.RequestException as e:
-        logging.error(f"No se pudo descargar {uri}: {e}")  # Mensaje si falla la descarga
+        print(f"No se pudo descargar {uri}: {e}")  # Mensaje si falla la descarga
     # Manejo de errores si el archivo ZIP está corrupto
     except zipfile.BadZipFile:
-        logging.error(f"Archivo ZIP corrupto: {filename}")  # Mensaje si el ZIP no se puede abrir
+        print(f"Archivo ZIP corrupto: {filename}")  # Mensaje si el ZIP no se puede abrir
     # Captura cualquier otro error
     except Exception as e:
-        logging.error(f"Error procesando {filename}: {e}")  # Mensaje de error genérico
+        print(f"Error procesando {filename}: {e}")  # Mensaje de error genérico
 
-# Función principal que ejecuta todo el proceso
 def main() -> None:
-    logging.basicConfig(level=logging.INFO)  # Configura logging para mostrar mensajes de info y error
     create_download_dir()  # Crear carpeta de descargas
 
-    # Iterar sobre cada URL y descargar + extraer
     for uri in download_uris:
         download_and_extract(uri)  # Llama a la función para procesar cada archivo
 
-    logging.info("Proceso finalizado.")  # Mensaje al final del proceso
+    print("Proceso finalizado.")  # Mensaje al final del proceso
 
-# Ejecuta la función principal solo si se ejecuta este archivo directamente
 if __name__ == "__main__":
     main()
