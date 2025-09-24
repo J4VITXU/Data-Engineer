@@ -12,22 +12,6 @@ download_uris = [
     "https://divvy-tripdata.s3.amazonaws.com/Divvy_Trips_2020_Q1.zip",
     "https://divvy-tripdata.s3.amazonaws.com/Divvy_Trips_2220_Q1.zip"
 ]
-import os  # Permite trabajar con carpetas y rutas del sistema
-import logging  # Permite mostrar mensajes informativos o de error
-import requests  # Para realizar solicitudes HTTP y descargar archivos
-import zipfile  # Para trabajar con archivos ZIP (descomprimirlos)
-
-# Lista de URLs de archivos ZIP que se quieren descargar
-download_uris = [
-    "https://divvy-tripdata.s3.amazonaws.com/Divvy_Trips_2018_Q4.zip",
-    "https://divvy-tripdata.s3.amazonaws.com/Divvy_Trips_2019_Q1.zip",
-    "https://divvy-tripdata.s3.amazonaws.com/Divvy_Trips_2019_Q2.zip",
-    "https://divvy-tripdata.s3.amazonaws.com/Divvy_Trips_2019_Q3.zip",
-    "https://divvy-tripdata.s3.amazonaws.com/Divvy_Trips_2019_Q4.zip",
-    "https://divvy-tripdata.s3.amazonaws.com/Divvy_Trips_2020_Q1.zip",
-    "https://divvy-tripdata.s3.amazonaws.com/Divvy_Trips_2220_Q1.zip"  # URL inválida para probar manejo de errores
-]
-
 # Carpeta donde se guardarán los archivos descargados y extraídos
 DOWNLOAD_DIR = "downloads"
 
