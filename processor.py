@@ -12,10 +12,8 @@ download_uris = [
     "https://divvy-tripdata.s3.amazonaws.com/Divvy_Trips_2020_Q1.zip",
     "https://divvy-tripdata.s3.amazonaws.com/Divvy_Trips_2220_Q1.zip"
 ]
-# Carpeta donde se guardarán los archivos descargados y extraídos
 DOWNLOAD_DIR = "downloads"
 
-# Función para crear la carpeta de descargas si no existe
 def create_download_dir():
     os.makedirs(DOWNLOAD_DIR, exist_ok=True)  # Crea la carpeta; si ya existe, no da error
     print(f"Carpeta '{DOWNLOAD_DIR}' creada o ya existente.")
@@ -33,33 +31,29 @@ def download_and_extract(uri: str):
         with open(filepath, "wb") as f:
             for chunk in response.iter_content(chunk_size=8192):  # Descarga por partes
                 f.write(chunk)  # Escribe cada parte en el archivo
-        print(f"Archivo descargado: {filename}")  # Mensaje de confirmación
+        print(f"Archivo descargado: {filename}")
 
         # Abrir el ZIP y extraer su contenido
         with zipfile.ZipFile(filepath, "r") as zip_ref:
             zip_ref.extractall(DOWNLOAD_DIR)  # Extrae todo en la carpeta de descargas
-        print(f"Archivo extraído: {filename}")  # Mensaje de confirmación
+        print(f"Archivo extraído: {filename}")
 
         os.remove(filepath)  # Elimina el archivo ZIP original
         print(f"Archivo ZIP eliminado: {filename}")  # Mensaje de confirmación
 
-    # Manejo de errores en caso de problemas de descarga
+    # Manejo de errores
     except requests.exceptions.RequestException as e:
         print(f"No se pudo descargar {uri}: {e}")  # Mensaje si falla la descarga
-    # Manejo de errores si el archivo ZIP está corrupto
     except zipfile.BadZipFile:
         print(f"Archivo ZIP corrupto: {filename}")  # Mensaje si el ZIP no se puede abrir
-    # Captura cualquier otro error
-    except Exception as e:
-        print(f"Error procesando {filename}: {e}")  # Mensaje de error genérico
 
 def main() -> None:
-    create_download_dir()  # Crear carpeta de descargas
+    create_download_dir()
 
     for uri in download_uris:
-        download_and_extract(uri)  # Llama a la función para procesar cada archivo
+        download_and_extract(uri)
 
-    print("Proceso finalizado.")  # Mensaje al final del proceso
+    print("Proceso finalizado.")
 
 if __name__ == "__main__":
     main()
