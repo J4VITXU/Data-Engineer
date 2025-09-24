@@ -18,7 +18,7 @@ DOWNLOAD_DIR = "downloads"
 # Función para crear la carpeta de descargas si no existe
 def create_download_dir():
     os.makedirs(DOWNLOAD_DIR, exist_ok=True)  # Crea la carpeta; si ya existe, no da error
-    logging.info(f"Carpeta '{DOWNLOAD_DIR}' creada o ya existente.")  # Mensaje informativo
+    logging.info(f"Carpeta '{DOWNLOAD_DIR}' creada o ya existente.")
 
 # Función para descargar un archivo ZIP, extraerlo y eliminar el ZIP
 def download_and_extract(uri: str):
