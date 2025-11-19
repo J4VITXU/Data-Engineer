@@ -1,0 +1,433 @@
+[
+  {
+    "id": 1,
+    "name": "Abel Pintos",
+    "url": "https://acordes.lacuerda.net/abel_pintos/",
+    "genres": [
+      "folclore"
+    ],
+    "albums": [],
+    "songs": [
+      {
+        "id": 1,
+        "song_title": "La Llave",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/la_llave.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/la_llave.txt"
+      },
+      {
+        "id": 2,
+        "song_title": "Sin Principio Ni Final",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/sin_principio_ni_final.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/sin_principio_ni_final.txt"
+      },
+      {
+        "id": 3,
+        "song_title": "No Me Olvides",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/no_me_olvides.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/no_me_olvides.txt"
+      },
+      {
+        "id": 4,
+        "song_title": "Bailando Con Tu Sombra",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/bailando_con_tu_sombra.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/bailando_con_tu_sombra.txt"
+      },
+      {
+        "id": 5,
+        "song_title": "Once Mil",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/once_mil.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/once_mil.txt"
+      },
+      {
+        "id": 6,
+        "song_title": "Motivos",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/motivos.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/motivos.txt"
+      },
+      {
+        "id": 7,
+        "song_title": "Bailando Con Tu Sombra Aleli",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/bailando_con_tu_sombra_aleli.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/bailando_con_tu_sombra_aleli.txt"
+      },
+      {
+        "id": 8,
+        "song_title": "El Adivino",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/el_adivino.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/el_adivino.txt"
+      },
+      {
+        "id": 9,
+        "song_title": "Como Te Extranio",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/como_te_extranio.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/como_te_extranio.txt"
+      },
+      {
+        "id": 10,
+        "song_title": "Tanto Amor",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/tanto_amor.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/tanto_amor.txt"
+      },
+      {
+        "id": 11,
+        "song_title": "3",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/3.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/3.txt"
+      },
+      {
+        "id": 12,
+        "song_title": "5 Siglos Igual",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/5_siglos_igual.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/5_siglos_igual.txt"
+      },
+      {
+        "id": 13,
+        "song_title": "A Veces Pasa",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/a_veces_pasa.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/a_veces_pasa.txt"
+      },
+      {
+        "id": 14,
+        "song_title": "Adios",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/adios.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/adios.txt"
+      },
+      {
+        "id": 15,
+        "song_title": "Abismo",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/abismo.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/abismo.txt"
+      },
+      {
+        "id": 16,
+        "song_title": "Adios",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/adios.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/adios.txt"
+      },
+      {
+        "id": 17,
+        "song_title": "Alguien",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/alguien.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/alguien.txt"
+      },
+      {
+        "id": 18,
+        "song_title": "Alguna Vez",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/alguna_vez.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/alguna_vez.txt"
+      },
+      {
+        "id": 19,
+        "song_title": "Amame",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/amame.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/amame.txt"
+      },
+      {
+        "id": 20,
+        "song_title": "Anclada En Mis Suenios",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/anclada_en_mis_suenios.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/anclada_en_mis_suenios.txt"
+      },
+      {
+        "id": 21,
+        "song_title": "Aqui",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/aqui.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/aqui.txt"
+      },
+      {
+        "id": 22,
+        "song_title": "Aqui Te Espero",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/aqui_te_espero.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/aqui_te_espero.txt"
+      },
+      {
+        "id": 23,
+        "song_title": "Arder En Libertad",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/arder_en_libertad.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/arder_en_libertad.txt"
+      },
+      {
+        "id": 24,
+        "song_title": "Asuntos Pendientes",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/asuntos_pendientes.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/asuntos_pendientes.txt"
+      },
+      {
+        "id": 25,
+        "song_title": "Aventura",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/aventura.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/aventura.txt"
+      },
+      {
+        "id": 26,
+        "song_title": "Bailando Con Tu Sombra",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/bailando_con_tu_sombra.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/bailando_con_tu_sombra.txt"
+      },
+      {
+        "id": 27,
+        "song_title": "Bailando Con Tu Sombra Aleli",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/bailando_con_tu_sombra_aleli.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/bailando_con_tu_sombra_aleli.txt"
+      },
+      {
+        "id": 28,
+        "song_title": "Bella Flor",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/bella_flor.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/bella_flor.txt"
+      },
+      {
+        "id": 29,
+        "song_title": "Bonus Track",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/bonus_track.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/bonus_track.txt"
+      },
+      {
+        "id": 30,
+        "song_title": "Botellas Al Mar",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/botellas_al_mar.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/botellas_al_mar.txt"
+      },
+      {
+        "id": 31,
+        "song_title": "Buenos Amores",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/buenos_amores.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/buenos_amores.txt"
+      },
+      {
+        "id": 32,
+        "song_title": "Caceria",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/caceria.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/caceria.txt"
+      },
+      {
+        "id": 33,
+        "song_title": "Cactus",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/cactus.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/cactus.txt"
+      },
+      {
+        "id": 34,
+        "song_title": "Cada Segundo Sin Vos",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/cada_segundo_sin_vos.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/cada_segundo_sin_vos.txt"
+      },
+      {
+        "id": 35,
+        "song_title": "Cancion Que Acuna",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/cancion_que_acuna.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/cancion_que_acuna.txt"
+      },
+      {
+        "id": 36,
+        "song_title": "Canta",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/canta.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/canta.txt"
+      },
+      {
+        "id": 37,
+        "song_title": "Carta Urgente",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/carta_urgente.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/carta_urgente.txt"
+      },
+      {
+        "id": 38,
+        "song_title": "Cerca Del Mar",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/cerca_del_mar.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/cerca_del_mar.txt"
+      },
+      {
+        "id": 39,
+        "song_title": "Cien Anios",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/cien_anios.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/cien_anios.txt"
+      },
+      {
+        "id": 40,
+        "song_title": "Como Te Extranio",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/como_te_extranio.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/como_te_extranio.txt"
+      },
+      {
+        "id": 41,
+        "song_title": "Corazon Ambriento",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/corazon_ambriento.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/corazon_ambriento.txt"
+      },
+      {
+        "id": 42,
+        "song_title": "Cronica",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/cronica.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/cronica.txt"
+      },
+      {
+        "id": 43,
+        "song_title": "Cuando Llegue El Alba",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/cuando_llegue_el_alba.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/cuando_llegue_el_alba.txt"
+      },
+      {
+        "id": 44,
+        "song_title": "Cuantas Veces",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/cuantas_veces.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/cuantas_veces.txt"
+      },
+      {
+        "id": 45,
+        "song_title": "De Amor Y De Guerra",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/de_amor_y_de_guerra.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/de_amor_y_de_guerra.txt"
+      },
+      {
+        "id": 46,
+        "song_title": "De Solo Vivir",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/de_solo_vivir.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/de_solo_vivir.txt"
+      },
+      {
+        "id": 47,
+        "song_title": "Disparos",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/disparos.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/disparos.txt"
+      },
+      {
+        "id": 48,
+        "song_title": "Duenios Del Amor",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/duenios_del_amor.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/duenios_del_amor.txt"
+      },
+      {
+        "id": 49,
+        "song_title": "El Adivino",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/el_adivino.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/el_adivino.txt"
+      },
+      {
+        "id": 50,
+        "song_title": "El Alcatraz",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/el_alcatraz.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/el_alcatraz.txt"
+      },
+      {
+        "id": 51,
+        "song_title": "El Amor En Mi Vida",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/el_amor_en_mi_vida.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/el_amor_en_mi_vida.txt"
+      },
+      {
+        "id": 52,
+        "song_title": "El Antigal",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/el_antigal.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/el_antigal.txt"
+      },
+      {
+        "id": 53,
+        "song_title": "El Beso",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/el_beso.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/el_beso.txt"
+      },
+      {
+        "id": 54,
+        "song_title": "El Dominguero",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/el_dominguero.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/el_dominguero.txt"
+      },
+      {
+        "id": 55,
+        "song_title": "El Hechizo",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/el_hechizo.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/el_hechizo.txt"
+      },
+      {
+        "id": 56,
+        "song_title": "El Mar",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/el_mar.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/el_mar.txt"
+      },
+      {
+        "id": 57,
+        "song_title": "El Rio Va",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/el_rio_va.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/el_rio_va.txt"
+      },
+      {
+        "id": 58,
+        "song_title": "El Sabor Del Mar",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/el_sabor_del_mar.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/el_sabor_del_mar.txt"
+      },
+      {
+        "id": 59,
+        "song_title": "Es La Duenia",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/es_la_duenia.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/es_la_duenia.txt"
+      },
+      {
+        "id": 60,
+        "song_title": "Espiritu",
+        "song_url": "https://acordes.lacuerda.net/abel_pintos/espiritu.shtml",
+        "genre": "",
+        "lyrics_path": "./files/songs/abel_pintos/espiritu.txt"
+      }
+    ]
+  }
+]
