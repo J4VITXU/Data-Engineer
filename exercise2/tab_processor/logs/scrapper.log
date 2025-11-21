@@ -1,40 +1,98 @@
-2025-11-19 19:56:22 INFO     Scrapper started at 2025-11-19 19:56:22.383979
-2025-11-19 19:56:22 INFO     Starting to download lyrics...
-2025-11-19 19:56:22 INFO     Loading catalog from files\catalog.json
-2025-11-19 19:56:22 INFO     in <ws2:artist>, uncaught attribute type-id
-2025-11-19 19:56:22 INFO     in <ws2:area>, uncaught attribute type-id
-2025-11-19 19:56:22 INFO     in <ws2:begin-area>, uncaught attribute type-id
-2025-11-19 19:56:23 INFO     Catalog loaded: 1 artists
-2025-11-19 19:56:23 INFO     Processing artist: Abel Pintos (60 songs)
-2025-11-19 19:56:23 INFO     File files\songs\abel_pintos\la_llave.txt already exists. Skipping download.
-2025-11-19 19:56:23 INFO     Skipping existing file: files\songs\abel_pintos\la_llave.txt
-2025-11-19 19:56:23 INFO     File files\songs\abel_pintos\sin_principio_ni_final.txt already exists. Skipping download.
-2025-11-19 19:56:23 INFO     Skipping existing file: files\songs\abel_pintos\sin_principio_ni_final.txt
-2025-11-19 19:56:23 INFO     File files\songs\abel_pintos\no_me_olvides.txt already exists. Skipping download.
-2025-11-19 19:56:23 INFO     Skipping existing file: files\songs\abel_pintos\no_me_olvides.txt
-2025-11-19 19:56:23 INFO     File files\songs\abel_pintos\bailando_con_tu_sombra.txt already exists. Skipping download.
-2025-11-19 19:56:23 INFO     Skipping existing file: files\songs\abel_pintos\bailando_con_tu_sombra.txt
-2025-11-19 19:56:23 INFO     File files\songs\abel_pintos\once_mil.txt already exists. Skipping download.
-2025-11-19 19:56:23 INFO     Skipping existing file: files\songs\abel_pintos\once_mil.txt
-2025-11-19 19:56:23 INFO     File files\songs\abel_pintos\motivos.txt already exists. Skipping download.
-2025-11-19 19:56:23 INFO     Skipping existing file: files\songs\abel_pintos\motivos.txt
-2025-11-19 19:56:23 INFO     song --> bailando_con_tu_sombra_aleli.txt - url --> https://acordes.lacuerda.net/abel_pintos/bailando_con_tu_sombra_aleli.shtml
-2025-11-19 19:56:24 INFO     song --> el_adivino.txt - url --> https://acordes.lacuerda.net/abel_pintos/el_adivino.shtml
-2025-11-19 19:56:25 INFO     song --> como_te_extranio.txt - url --> https://acordes.lacuerda.net/abel_pintos/como_te_extranio.shtml
-2025-11-19 19:56:27 INFO     song --> tanto_amor.txt - url --> https://acordes.lacuerda.net/abel_pintos/tanto_amor.shtml
-2025-11-19 19:56:28 INFO     song --> 3.txt - url --> https://acordes.lacuerda.net/abel_pintos/3.shtml
-2025-11-19 19:56:29 INFO     song --> 5_siglos_igual.txt - url --> https://acordes.lacuerda.net/abel_pintos/5_siglos_igual.shtml
-2025-11-19 19:56:30 INFO     song --> a_veces_pasa.txt - url --> https://acordes.lacuerda.net/abel_pintos/a_veces_pasa.shtml
-2025-11-19 19:56:31 INFO     song --> adios.txt - url --> https://acordes.lacuerda.net/abel_pintos/adios.shtml
-2025-11-19 19:56:33 INFO     song --> abismo.txt - url --> https://acordes.lacuerda.net/abel_pintos/abismo.shtml
-2025-11-19 19:56:34 INFO     File files\songs\abel_pintos\adios.txt already exists. Skipping download.
-2025-11-19 19:56:34 INFO     Skipping existing file: files\songs\abel_pintos\adios.txt
-2025-11-19 19:56:34 INFO     song --> alguien.txt - url --> https://acordes.lacuerda.net/abel_pintos/alguien.shtml
-2025-11-19 19:56:35 INFO     song --> alguna_vez.txt - url --> https://acordes.lacuerda.net/abel_pintos/alguna_vez.shtml
-2025-11-19 19:56:36 INFO     song --> amame.txt - url --> https://acordes.lacuerda.net/abel_pintos/amame.shtml
-2025-11-19 19:56:37 INFO     song --> anclada_en_mis_suenios.txt - url --> https://acordes.lacuerda.net/abel_pintos/anclada_en_mis_suenios.shtml
-2025-11-19 19:56:39 INFO     song --> aqui.txt - url --> https://acordes.lacuerda.net/abel_pintos/aqui.shtml
-2025-11-19 19:56:40 INFO     song --> aqui_te_espero.txt - url --> https://acordes.lacuerda.net/abel_pintos/aqui_te_espero.shtml
-2025-11-19 19:56:41 INFO     song --> arder_en_libertad.txt - url --> https://acordes.lacuerda.net/abel_pintos/arder_en_libertad.shtml
-2025-11-19 19:56:42 INFO     song --> asuntos_pendientes.txt - url --> https://acordes.lacuerda.net/abel_pintos/asuntos_pendientes.shtml
-2025-11-19 19:56:43 INFO     song --> aventura.txt - url --> https://acordes.lacuerda.net/abel_pintos/aventura.shtml
+2025-11-21 16:44:22 INFO     Scrapper started at 2025-11-21 16:44:22.450289
+2025-11-21 16:44:22 INFO     Starting to download lyrics...
+2025-11-21 16:44:22 INFO     Loading catalog from files\catalog.json
+2025-11-21 16:44:22 INFO     in <ws2:artist>, uncaught attribute type-id
+2025-11-21 16:44:22 INFO     in <ws2:area>, uncaught attribute type-id
+2025-11-21 16:44:22 INFO     in <ws2:begin-area>, uncaught attribute type-id
+2025-11-21 16:44:23 INFO     in <ws2:artist>, uncaught attribute type-id
+2025-11-21 16:44:23 INFO     Catalog loaded: 1 artists
+2025-11-21 16:44:23 INFO     Processing artist: Abel Pintos (60 songs)
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\la_llave.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\la_llave.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\sin_principio_ni_final.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\sin_principio_ni_final.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\no_me_olvides.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\no_me_olvides.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\bailando_con_tu_sombra.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\bailando_con_tu_sombra.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\once_mil.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\once_mil.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\motivos.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\motivos.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\bailando_con_tu_sombra_aleli.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\bailando_con_tu_sombra_aleli.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\el_adivino.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\el_adivino.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\como_te_extranio.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\como_te_extranio.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\tanto_amor.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\tanto_amor.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\3.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\3.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\5_siglos_igual.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\5_siglos_igual.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\a_veces_pasa.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\a_veces_pasa.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\adios.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\adios.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\abismo.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\abismo.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\adios.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\adios.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\alguien.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\alguien.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\alguna_vez.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\alguna_vez.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\amame.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\amame.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\anclada_en_mis_suenios.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\anclada_en_mis_suenios.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\aqui.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\aqui.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\aqui_te_espero.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\aqui_te_espero.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\arder_en_libertad.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\arder_en_libertad.txt
+2025-11-21 16:44:23 INFO     File files\songs\abel_pintos\asuntos_pendientes.txt already exists. Skipping download.
+2025-11-21 16:44:23 INFO     Skipping existing file: files\songs\abel_pintos\asuntos_pendientes.txt
+2025-11-21 16:44:23 INFO     song --> aventura.txt - url --> https://acordes.lacuerda.net/abel_pintos/aventura.shtml
+2025-11-21 16:44:24 INFO     File files\songs\abel_pintos\bailando_con_tu_sombra.txt already exists. Skipping download.
+2025-11-21 16:44:24 INFO     Skipping existing file: files\songs\abel_pintos\bailando_con_tu_sombra.txt
+2025-11-21 16:44:24 INFO     File files\songs\abel_pintos\bailando_con_tu_sombra_aleli.txt already exists. Skipping download.
+2025-11-21 16:44:24 INFO     Skipping existing file: files\songs\abel_pintos\bailando_con_tu_sombra_aleli.txt
+2025-11-21 16:44:24 INFO     song --> bella_flor.txt - url --> https://acordes.lacuerda.net/abel_pintos/bella_flor.shtml
+2025-11-21 16:44:25 INFO     song --> bonus_track.txt - url --> https://acordes.lacuerda.net/abel_pintos/bonus_track.shtml
+2025-11-21 16:44:26 INFO     song --> botellas_al_mar.txt - url --> https://acordes.lacuerda.net/abel_pintos/botellas_al_mar.shtml
+2025-11-21 16:44:27 INFO     song --> buenos_amores.txt - url --> https://acordes.lacuerda.net/abel_pintos/buenos_amores.shtml
+2025-11-21 16:44:28 INFO     song --> caceria.txt - url --> https://acordes.lacuerda.net/abel_pintos/caceria.shtml
+2025-11-21 16:44:29 INFO     song --> cactus.txt - url --> https://acordes.lacuerda.net/abel_pintos/cactus.shtml
+2025-11-21 16:44:30 INFO     song --> cada_segundo_sin_vos.txt - url --> https://acordes.lacuerda.net/abel_pintos/cada_segundo_sin_vos.shtml
+2025-11-21 16:44:31 INFO     song --> cancion_que_acuna.txt - url --> https://acordes.lacuerda.net/abel_pintos/cancion_que_acuna.shtml
+2025-11-21 16:44:32 INFO     song --> canta.txt - url --> https://acordes.lacuerda.net/abel_pintos/canta.shtml
+2025-11-21 16:44:33 INFO     song --> carta_urgente.txt - url --> https://acordes.lacuerda.net/abel_pintos/carta_urgente.shtml
+2025-11-21 16:44:34 INFO     song --> cerca_del_mar.txt - url --> https://acordes.lacuerda.net/abel_pintos/cerca_del_mar.shtml
+2025-11-21 16:44:35 INFO     song --> cien_anios.txt - url --> https://acordes.lacuerda.net/abel_pintos/cien_anios.shtml
+2025-11-21 16:44:36 INFO     File files\songs\abel_pintos\como_te_extranio.txt already exists. Skipping download.
+2025-11-21 16:44:36 INFO     Skipping existing file: files\songs\abel_pintos\como_te_extranio.txt
+2025-11-21 16:44:36 INFO     song --> corazon_ambriento.txt - url --> https://acordes.lacuerda.net/abel_pintos/corazon_ambriento.shtml
+2025-11-21 16:44:37 INFO     song --> cronica.txt - url --> https://acordes.lacuerda.net/abel_pintos/cronica.shtml
+2025-11-21 16:44:38 INFO     song --> cuando_llegue_el_alba.txt - url --> https://acordes.lacuerda.net/abel_pintos/cuando_llegue_el_alba.shtml
+2025-11-21 16:44:39 INFO     song --> cuantas_veces.txt - url --> https://acordes.lacuerda.net/abel_pintos/cuantas_veces.shtml
+2025-11-21 16:44:40 INFO     song --> de_amor_y_de_guerra.txt - url --> https://acordes.lacuerda.net/abel_pintos/de_amor_y_de_guerra.shtml
+2025-11-21 16:44:41 INFO     song --> de_solo_vivir.txt - url --> https://acordes.lacuerda.net/abel_pintos/de_solo_vivir.shtml
+2025-11-21 16:44:42 INFO     song --> disparos.txt - url --> https://acordes.lacuerda.net/abel_pintos/disparos.shtml
+2025-11-21 16:44:43 INFO     song --> duenios_del_amor.txt - url --> https://acordes.lacuerda.net/abel_pintos/duenios_del_amor.shtml
+2025-11-21 16:44:44 INFO     File files\songs\abel_pintos\el_adivino.txt already exists. Skipping download.
+2025-11-21 16:44:44 INFO     Skipping existing file: files\songs\abel_pintos\el_adivino.txt
+2025-11-21 16:44:44 INFO     song --> el_alcatraz.txt - url --> https://acordes.lacuerda.net/abel_pintos/el_alcatraz.shtml
+2025-11-21 16:44:45 INFO     song --> el_amor_en_mi_vida.txt - url --> https://acordes.lacuerda.net/abel_pintos/el_amor_en_mi_vida.shtml
+2025-11-21 16:44:46 INFO     song --> el_antigal.txt - url --> https://acordes.lacuerda.net/abel_pintos/el_antigal.shtml
+2025-11-21 16:44:47 INFO     song --> el_beso.txt - url --> https://acordes.lacuerda.net/abel_pintos/el_beso.shtml
+2025-11-21 16:44:47 INFO     song --> el_dominguero.txt - url --> https://acordes.lacuerda.net/abel_pintos/el_dominguero.shtml
+2025-11-21 16:44:48 INFO     song --> el_hechizo.txt - url --> https://acordes.lacuerda.net/abel_pintos/el_hechizo.shtml
+2025-11-21 16:44:49 INFO     song --> el_mar.txt - url --> https://acordes.lacuerda.net/abel_pintos/el_mar.shtml
+2025-11-21 16:44:50 INFO     song --> el_rio_va.txt - url --> https://acordes.lacuerda.net/abel_pintos/el_rio_va.shtml
+2025-11-21 16:44:51 INFO     song --> el_sabor_del_mar.txt - url --> https://acordes.lacuerda.net/abel_pintos/el_sabor_del_mar.shtml
+2025-11-21 16:44:52 INFO     song --> es_la_duenia.txt - url --> https://acordes.lacuerda.net/abel_pintos/es_la_duenia.shtml
+2025-11-21 16:44:53 INFO     song --> espiritu.txt - url --> https://acordes.lacuerda.net/abel_pintos/espiritu.shtml
+2025-11-21 16:44:54 INFO     Total duration: 0:00:32.144331

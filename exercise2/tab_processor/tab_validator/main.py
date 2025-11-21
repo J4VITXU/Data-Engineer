@@ -32,7 +32,7 @@ log.basicConfig(
 # --- Validation rules ---
 
 # Regla original: formato básico
-BASE_PATTERN = r"((?:[A-Z]+\s+)*\n.+)+"
+BASE_PATTERN = r".+\n.+"
 
 # ✅ Regla nueva: debe haber al menos un acorde tipo A, Am, C#, Fm, etc.
 CHORD_PATTERN = re.compile(r"\b([A-G][#b]?m?(maj7)?(sus2|sus4)?7?)\b")
