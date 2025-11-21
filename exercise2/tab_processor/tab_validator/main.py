@@ -1,52 +1,66 @@
-# Importamos las bibliotecas necesarias
-import os
-import click
 import re
 import logging as log
 import datetime
 import shutil
+from pathlib import Path
 
-INPUT_DIRECTORY = "./files/"
-CLEANED_DIRECTORY = f"{INPUT_DIRECTORY}cleaned"
-OUTPUT_DIRECTORY_OK = f"{INPUT_DIRECTORY}validations/ok"
-OUTPUT_DIRECTORY_KO = f"{INPUT_DIRECTORY}validations/ko"
+import click
+
+# --- Configuration ---
+INPUT_DIRECTORY = Path("./files")
+CLEANED_DIRECTORY = INPUT_DIRECTORY / "cleaned"
+OUTPUT_DIRECTORY_OK = INPUT_DIRECTORY / "validations" / "ok"
+OUTPUT_DIRECTORY_KO = INPUT_DIRECTORY / "validations" / "ko"
+
+LOGS_DIRECTORY = Path("./logs")
+
 ROOT = "https://acordes.lacuerda.net"
 URL_ARTIST_INDEX = "https://acordes.lacuerda.net/tabs/"
-SONG_VERSION = 0
-INDEX = "abcdefghijklmnopqrstuvwxyz#"
+
+# --- Logging config ---
+logger = log.getLogger(__name__)
+
+log.basicConfig(
+    filename=str(LOGS_DIRECTORY / "validator.log"),
+    filemode="w",
+    encoding="utf-8",
+    format="%(asctime)s %(levelname)-8s %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+    level=log.INFO,
+)
+
+# --- Validation rules ---
+
+# Regla original: formato básico
+BASE_PATTERN = r"((?:[A-Z]+\s+)*\n.+)+"
+
+# ✅ Regla nueva: debe haber al menos un acorde tipo A, Am, C#, Fm, etc.
+CHORD_PATTERN = re.compile(r"\b([A-G][#b]?m?(maj7)?(sus2|sus4)?7?)\b")
 
 
-dir_list = list()
-output_file = str()
-dir = str()
-file_name = str()
+def validate_song_format(song: str) -> bool:
+    """
+    Validates if the song follows a basic expected format
+    AND contains at least one chord pattern.
+    """
 
-
-def validate_song_format(song):
-    """Validates if the song follows a basic expected format."""
-    # Regex pattern for song format
-    pattern = r"((?:[A-Z]+\s+)*\n.+)+"
-
-    # Check if the song matches the pattern
-    match = re.fullmatch(pattern, song, flags=re.DOTALL)
-
-    # If there is a match, the song is in the correct format
-    if match:
-        return True
-    else:
+    # Regla 1: formato básico (la que ya tenías)
+    match = re.fullmatch(BASE_PATTERN, song, flags=re.DOTALL)
+    if not match:
         return False
 
+    # ✅ Regla 2 (nueva): al menos un acorde reconocible
+    if not CHORD_PATTERN.search(song):
+        return False
 
-def list_files_recursive(path: str = "."):
-    """Lists all files in a directory recursively."""
-    for entry in os.listdir(path):
-        full_path = os.path.join(path, entry)
-        if os.path.isdir(full_path):
-            list_files_recursive(full_path)
-        else:
-            dir_list.append(full_path)
+    return True
 
-    return dir_list
+
+def iter_cleaned_files():
+    """Itera por todos los .txt en el directorio cleaned."""
+    for path in CLEANED_DIRECTORY.rglob("*.txt"):
+        if path.is_file():
+            yield path
 
 
 @click.command()
@@ -65,46 +79,61 @@ def main(init):
     log.info(f"Validator started at {start_time}")
     print("Starting validator...")
 
+    # Limpiar salidas si se usa --init
     if init:
-        if os.path.exists(OUTPUT_DIRECTORY_OK):
+        if OUTPUT_DIRECTORY_OK.exists():
             shutil.rmtree(OUTPUT_DIRECTORY_OK)
-        if os.path.exists(OUTPUT_DIRECTORY_KO):
+        if OUTPUT_DIRECTORY_KO.exists():
             shutil.rmtree(OUTPUT_DIRECTORY_KO)
-        log.info("Directories Removed")
+        log.info("Validation output directories removed")
 
     OK = 0
     KO = 0
 
-    for file_path in list_files_recursive(CLEANED_DIRECTORY):
+    # Nos aseguramos de que existen las carpetas raíz
+    OUTPUT_DIRECTORY_OK.mkdir(parents=True, exist_ok=True)
+    OUTPUT_DIRECTORY_KO.mkdir(parents=True, exist_ok=True)
 
-        text = str()
-        with open(file_path, "r") as file:
-            text = file.read()
+    for file_path in iter_cleaned_files():
+        # Leer siempre en UTF-8 y tolerante
+        try:
+            text = file_path.read_text(encoding="utf-8", errors="ignore")
+        except Exception as e:
+            log.error(f"Error reading {file_path}: {e}")
+            KO += 1
+            # En caso de error de lectura, lo tratamos como KO
+            rel = file_path.relative_to(CLEANED_DIRECTORY)
+            output_file = OUTPUT_DIRECTORY_KO / rel
+            output_file.parent.mkdir(parents=True, exist_ok=True)
+            output_file.write_text("", encoding="utf-8")
+            continue
 
-        # Formatting of the text goes in that function call
         validated = validate_song_format(text)
 
+        # Construimos la ruta de salida manteniendo la estructura relativa
+        rel = file_path.relative_to(CLEANED_DIRECTORY)
         if validated:
-
-            output_file = file_path.replace(CLEANED_DIRECTORY, OUTPUT_DIRECTORY_OK)
-            dir = "/".join(output_file.split("/")[:-1])
-            file_name = output_file.split("/")[-1:]
+            output_file = OUTPUT_DIRECTORY_OK / rel
             OK += 1
         else:
-
-            output_file = file_path.replace(CLEANED_DIRECTORY, OUTPUT_DIRECTORY_KO)
-            dir = "/".join(output_file.split("/")[:-1])
-            file_name = output_file.split("/")[-1:]
+            output_file = OUTPUT_DIRECTORY_KO / rel
             KO += 1
 
-        # Creates the path if not exists
-        if not os.path.exists(dir):
-            os.makedirs(dir, exist_ok=True)
-            print("OKs = ", OK, "-- KOs = ", KO, "--", dir, " CREATED!!")
+        # Creamos la carpeta si no existe
+        output_file.parent.mkdir(parents=True, exist_ok=True)
 
-        with open(output_file, "w") as file:
-            file.write(text)
-            print("OKs = ", OK, "-- KOs = ", KO, "--", file_name, " CREATED!!")
+        # Guardamos el fichero en la ruta correspondiente
+        output_file.write_text(text, encoding="utf-8")
+
+        print(
+            "OKs = ",
+            OK,
+            "-- KOs = ",
+            KO,
+            "--",
+            [output_file.name],
+            " CREATED!!",
+        )
 
     log.info(f"OKs = {OK}, -- KOs = {KO}, --")
     end_time = datetime.datetime.now()
@@ -112,7 +141,8 @@ def main(init):
     duration = end_time - start_time
     log.info(f"Total duration: {duration}")
     print(
-        f"Validator finished. Duration in seconds: {duration.total_seconds()}, that is {duration.total_seconds() / 60} minutes."
+        f"Validator finished. Duration in seconds: {duration.total_seconds()}, "
+        f"that is {duration.total_seconds() / 60} minutes."
     )
 
 
