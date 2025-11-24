@@ -17,7 +17,7 @@ print(f"Started at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
 # STEP 1: RETRIEVE DATA FROM WEB SOURCE (Aquí: archivo local)
 # ============================================================================
 
-df = pd.read_csv("exercise.csv", engine="python", on_bad_lines="skip")
+df = pd.read_csv("exercise.csv", engine="python", sep=",", quotechar='"', on_bad_lines="warn")
 
 print("STEP 1: DATA RETRIEVED\n")
 
@@ -36,106 +36,129 @@ print()
 # ============================================================================
 # STEP 3: IDENTIFY QUALITY ISSUES
 # ============================================================================
+print("STEP 3: IDENTIFY QUALITY ISSUES (AUTO-DETECTED)\n")
 
-print("STEP 3: IDENTIFY QUALITY ISSUES")
+clean = df.copy()
+issues = {}
 
-issues = [
-    "• Duplicated rows",
-    "• Inconsistent country names (USA, usa, united states, US…) ",
-    "• Invalid emails",
-    "• Invalid phone numbers",
-    "• Invalid or negative quantities",
-    "• Age values impossible (negative, 999, 'unknown')",
-    "• Price values missing",
-    "• Mixed date formats"
+# 1. Missing values
+missing = clean.isna().sum()
+issues["missing_values"] = missing[missing > 0]
+
+# 2. Duplicated rows
+issues["duplicated_rows"] = clean.duplicated().sum()
+
+# 3. Inconsistent country values
+issues["country_values"] = clean["Country"].str.lower().value_counts()
+
+# 4. Invalid emails (regex)
+email_pattern = r"^[\w\.-]+@[\w\.-]+\.\w+$"
+invalid_emails = clean[~clean["Email"].fillna("").str.match(email_pattern)]
+issues["invalid_emails"] = invalid_emails[["Email"]]
+
+# 5. Invalid phones (must be 7–15 digits)
+invalid_phones = clean[
+    ~clean["Phone"].fillna("").str.replace(r"\D", "", regex=True).str.len().between(7, 15)
 ]
+issues["invalid_phones"] = invalid_phones[["Phone"]]
 
-for issue in issues:
-    print(issue)
+# 6. Invalid quantities
+issues["invalid_quantities"] = clean[clean["Quantity"] <= 0][["Quantity"]]
 
-print()
+# 7. Invalid ages
+def age_invalid(a):
+    try:
+        a_num = int(float(a))
+        return a_num < 0 or a_num > 120
+    except:
+        return True
+
+issues["invalid_ages"] = clean[clean["CustomerAge"].apply(age_invalid)][["CustomerAge"]]
+
+# 8. Invalid dates
+def invalid_date(x):
+    try:
+        pd.to_datetime(x, errors="raise")
+        return False
+    except:
+        return True
+
+issues["invalid_dates"] = clean[clean["OrderDate"].apply(invalid_date)][["OrderDate"]]
+
+# 9. Invalid prices
+issues["invalid_prices"] = clean[(clean["Price"].isna()) | (clean["Price"] <= 0)][["Price"]]
+
+
+for name, details in issues.items():
+    print(f"--- {name.upper()} ---")
+
+    if isinstance(details, (pd.DataFrame, pd.Series)):
+        print(details.head(10))
+    else:
+        print(details)
+
+    print()
 
 # ============================================================================
 # STEP 4: DATA CLEANING
 # ============================================================================
 
-print("STEP 4: CLEANING...")
+print("STEP 4: DATA CLEANING\n")
 
-clean = df.copy()
-
-# ---- Clean spacing issues ----
+# Clean names
 clean["CustomerName"] = clean["CustomerName"].str.title().str.strip()
-clean["Email"] = clean["Email"].str.strip().str.lower()
-clean["Country"] = clean["Country"].str.strip().str.title()
-clean["Phone"] = clean["Phone"].astype(str).str.strip()
 
-# ---- Standardize country names ----
+# Clean email
+clean["Email"] = clean["Email"].str.strip().str.lower()
+
+# Clean country
+clean["Country"] = clean["Country"].str.strip().str.title()
+
 country_map = {
     "Usa": "USA",
     "Us": "USA",
     "United States": "USA",
     "Gb": "UK",
-    "United Kingdom": "UK"
+    "United Kingdom": "UK",
+    "Uk": "UK"
 }
 clean["Country"] = clean["Country"].replace(country_map)
 
-# ---- Fix email format ----
-def valid_email(x):
-    if pd.isna(x): return np.nan
-    pattern = r"^[\w\.-]+@[\w\.-]+\.\w+$"
-    return x if re.match(pattern, x) else np.nan
-
-clean["Email"] = clean["Email"].apply(valid_email)
-
-# ---- Fix phone numbers ----
-clean["Phone"] = clean["Phone"].apply(lambda x: np.nan if "invalid" in str(x).lower() else x)
-clean["Phone"] = clean["Phone"].str.replace(" ", "").str.replace("-", "")
-
-# ---- Fix dates ----
-clean["OrderDate"] = pd.to_datetime(
-    clean["OrderDate"],
-    errors="coerce",
-    dayfirst=False
+# Clean phones
+clean["Phone"] = clean["Phone"].astype(str).str.replace(" ", "").str.replace("-", "")
+clean["Phone"] = clean["Phone"].apply(
+    lambda x: x if x.isdigit() and 7 <= len(x) <= 15 else np.nan
 )
 
-# ---- Fix quantities ----
+# Fix dates
+clean["OrderDate"] = pd.to_datetime(clean["OrderDate"], errors="coerce")
+
+# Fix quantities
 clean["Quantity"] = clean["Quantity"].apply(lambda x: np.nan if x <= 0 else x)
 
-# ---- Fix price ----
+# Fix prices
 clean["Price"] = pd.to_numeric(clean["Price"], errors="coerce")
+clean["Price"] = clean["Price"].apply(lambda x: np.nan if x is not None and x <= 0 else x)
 
-# ---- Fix age ----
+# Fix age
 def fix_age(a):
-    # Si es NaN → devolver NaN
     if pd.isna(a):
         return np.nan
-    
-    # Convertir todo a string
     a_str = str(a).strip().lower()
-
-    # Caso "unknown"
-    if a_str == "unknown" or a_str == "":
+    if a_str in ("unknown", "", "nan"):
         return np.nan
-
-    # Intentar convertir a número
     try:
         a_num = int(float(a_str))
     except:
         return np.nan
-
-    # Rango válido
     if a_num < 0 or a_num > 120:
         return np.nan
-
     return a_num
-
 
 clean["CustomerAge"] = clean["CustomerAge"].apply(fix_age)
 
-# ---- Remove duplicates ----
+# Remove duplicates
 clean = clean.drop_duplicates()
-
-print("Cleaning completed.\n")
 
 # ============================================================================
 # STEP 5: FINAL VALIDATION
