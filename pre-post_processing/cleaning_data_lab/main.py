@@ -42,62 +42,62 @@ clean = df.copy()
 issues = {}
 
 # 1. Missing values
-missing = clean.isna().sum()
-issues["missing_values"] = missing[missing > 0]
+issues["missing_values"] = clean.isna().sum()
 
 # 2. Duplicated rows
 issues["duplicated_rows"] = clean.duplicated().sum()
 
 # 3. Inconsistent country values
-issues["country_values"] = clean["Country"].str.lower().value_counts()
+issues["country_values"] = clean["Country"].astype(str).str.lower().value_counts()
 
-# 4. Invalid emails (regex)
-email_pattern = r"^[\w\.-]+@[\w\.-]+\.\w+$"
-invalid_emails = clean[~clean["Email"].fillna("").str.match(email_pattern)]
-issues["invalid_emails"] = invalid_emails[["Email"]]
-
-# 5. Invalid phones (must be 7–15 digits)
-invalid_phones = clean[
-    ~clean["Phone"].fillna("").str.replace(r"\D", "", regex=True).str.len().between(7, 15)
+# 4. Invalid emails (simple check: must contain @ and .)
+invalid_emails = clean[
+    (~clean["Email"].fillna("").str.contains("@")) |
+    (~clean["Email"].fillna("").str.contains("."))
 ]
-issues["invalid_phones"] = invalid_phones[["Phone"]]
+issues["invalid_emails"] = invalid_emails["Email"]
 
-# 6. Invalid quantities
-issues["invalid_quantities"] = clean[clean["Quantity"] <= 0][["Quantity"]]
+# 5. Invalid phones (simple check: remove spaces and - → must be digits)
+phones = clean["Phone"].fillna("").astype(str).str.replace(" ", "").str.replace("-", "")
+invalid_phones = clean[~phones.str.isdigit()]
+issues["invalid_phones"] = invalid_phones["Phone"]
 
-# 7. Invalid ages
-def age_invalid(a):
+# 6. Invalid quantities (negative or zero)
+issues["invalid_quantities"] = clean[clean["Quantity"] <= 0]["Quantity"]
+
+# 7. Invalid ages (not numbers or outside 0–120)
+def invalid_age(x):
     try:
-        a_num = int(float(a))
-        return a_num < 0 or a_num > 120
+        x = int(float(x))
+        return x < 0 or x > 120
     except:
         return True
 
-issues["invalid_ages"] = clean[clean["CustomerAge"].apply(age_invalid)][["CustomerAge"]]
+issues["invalid_ages"] = clean[clean["CustomerAge"].apply(invalid_age)]["CustomerAge"]
 
-# 8. Invalid dates
+# 8. Invalid dates (simple try/except)
 def invalid_date(x):
     try:
-        pd.to_datetime(x, errors="raise")
+        pd.to_datetime(x)
         return False
     except:
         return True
 
-issues["invalid_dates"] = clean[clean["OrderDate"].apply(invalid_date)][["OrderDate"]]
+issues["invalid_dates"] = clean[clean["OrderDate"].apply(invalid_date)]["OrderDate"]
 
-# 9. Invalid prices
-issues["invalid_prices"] = clean[(clean["Price"].isna()) | (clean["Price"] <= 0)][["Price"]]
-
-
-for name, details in issues.items():
+# 9. Invalid prices (missing or <= 0)
+issues["invalid_prices"] = clean[(clean["Price"].isna()) | (clean["Price"] <= 0)]["Price"]
+for name, value in issues.items():
     print(f"--- {name.upper()} ---")
 
-    if isinstance(details, (pd.DataFrame, pd.Series)):
-        print(details.head(10))
+    if isinstance(value, (pd.DataFrame, pd.Series)):
+        print(value.head(10))
     else:
-        print(details)
+        print(value)
 
     print()
+
+
 
 # ============================================================================
 # STEP 4: DATA CLEANING
