@@ -17,7 +17,7 @@ print(f"Started at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
 # STEP 1: RETRIEVE DATA FROM WEB SOURCE (Aquí: archivo local)
 # ============================================================================
 
-df = pd.read_csv("exercise.csv", engine="python", sep=",", quotechar='"', on_bad_lines="warn")
+df = pd.read_csv("exercise.csv", engine="python", sep=",", on_bad_lines="warn")
 
 print("STEP 1: DATA RETRIEVED\n")
 
@@ -87,6 +87,7 @@ issues["invalid_dates"] = clean[clean["OrderDate"].apply(invalid_date)]["OrderDa
 
 # 9. Invalid prices (missing or <= 0)
 issues["invalid_prices"] = clean[(clean["Price"].isna()) | (clean["Price"] <= 0)]["Price"]
+
 for name, value in issues.items():
     print(f"--- {name.upper()} ---")
 
@@ -125,10 +126,15 @@ country_map = {
 clean["Country"] = clean["Country"].replace(country_map)
 
 # Clean phones
-clean["Phone"] = clean["Phone"].astype(str).str.replace(" ", "").str.replace("-", "")
-clean["Phone"] = clean["Phone"].apply(
-    lambda x: x if x.isdigit() and 7 <= len(x) <= 15 else np.nan
-)
+def clean_phone(x):
+    if pd.isna(x):
+        return np.nan
+    phone_str = str(x).replace(" ", "").replace("-", "")
+    if phone_str.isdigit() and 7 <= len(phone_str) <= 15:
+        return phone_str
+    return np.nan
+
+clean["Phone"] = clean["Phone"].apply(clean_phone)
 
 # Fix dates
 clean["OrderDate"] = pd.to_datetime(clean["OrderDate"], errors="coerce")
@@ -138,7 +144,7 @@ clean["Quantity"] = clean["Quantity"].apply(lambda x: np.nan if x <= 0 else x)
 
 # Fix prices
 clean["Price"] = pd.to_numeric(clean["Price"], errors="coerce")
-clean["Price"] = clean["Price"].apply(lambda x: np.nan if x is not None and x <= 0 else x)
+clean["Price"] = clean["Price"].apply(lambda x: np.nan if pd.notna(x) and x <= 0 else x)
 
 # Fix age
 def fix_age(a):
@@ -166,10 +172,12 @@ clean = clean.drop_duplicates()
 
 print("STEP 5: VALIDATION\n")
 
+print("Data types and non-null counts:")
 print(clean.info())
-print("\nSummary of missing values:")
+print("\n" + "="*70)
+print("Summary of missing values:")
 print(clean.isna().sum())
-print()
+print("\n" + "="*70)
 
 # ============================================================================
 # STEP 6: SAVE CLEANED DATA
