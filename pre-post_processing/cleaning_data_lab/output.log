@@ -1,0 +1,198 @@
+/home/vbarcelo/repos/usj-ai-de-class/student-repos/javier-gallardo/pre-post_processing/cleaning_data_lab/main.py:20: ParserWarning: Skipping line 6: Expected 10 fields in line 6, saw 11
+
+  df = pd.read_csv("exercise.csv", engine="python", sep=",", on_bad_lines="warn")
+======================================================================
+DATA CLEANING EXERCISE - E-COMMERCE CUSTOMER ORDERS
+======================================================================
+Started at: 2025-12-12 13:40:52
+
+STEP 1: DATA RETRIEVED
+
+STEP 2: EXPLORATION
+   OrderID   CustomerName              Email  ...  Price CustomerAge OrderStatus
+0     1001       John Doe     john@email.com  ...  19.99          28   Completed
+1     1002     jane smith     JANE@GMAIL.COM  ...  49.99          35   Completed
+2     1003       john doe     john@email.com  ...  19.99          28   Completed
+3     1004    Bob Johnson   bob.j@email.com   ...  99.99          45     Pending
+4     1006  Charlie Davis                NaN  ...  79.99     unknown   Completed
+
+[5 rows x 10 columns]
+
+Info:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 189 entries, 0 to 188
+Data columns (total 10 columns):
+ #   Column        Non-Null Count  Dtype  
+---  ------        --------------  -----  
+ 0   OrderID       189 non-null    int64  
+ 1   CustomerName  189 non-null    object 
+ 2   Email         165 non-null    object 
+ 3   Phone         184 non-null    object 
+ 4   Country       189 non-null    object 
+ 5   OrderDate     189 non-null    object 
+ 6   Quantity      189 non-null    int64  
+ 7   Price         168 non-null    float64
+ 8   CustomerAge   187 non-null    object 
+ 9   OrderStatus   189 non-null    object 
+dtypes: float64(1), int64(2), object(7)
+memory usage: 14.9+ KB
+None
+
+Description:
+            OrderID   CustomerName  ... CustomerAge OrderStatus
+count    189.000000            189  ...         187         189
+unique          NaN            185  ...          52           6
+top             NaN  Olivia Martin  ...     unknown   Completed
+freq            NaN              3  ...          28          77
+mean    1095.978836            NaN  ...         NaN         NaN
+std       54.739903            NaN  ...         NaN         NaN
+min     1001.000000            NaN  ...         NaN         NaN
+25%     1049.000000            NaN  ...         NaN         NaN
+50%     1096.000000            NaN  ...         NaN         NaN
+75%     1143.000000            NaN  ...         NaN         NaN
+max     1190.000000            NaN  ...         NaN         NaN
+
+[11 rows x 10 columns]
+
+STEP 3: IDENTIFY QUALITY ISSUES (AUTO-DETECTED)
+
+--- MISSING_VALUES ---
+OrderID          0
+CustomerName     0
+Email           24
+Phone            5
+Country          0
+OrderDate        0
+Quantity         0
+Price           21
+CustomerAge      2
+OrderStatus      0
+dtype: int64
+
+--- DUPLICATED_ROWS ---
+0
+
+--- COUNTRY_VALUES ---
+Country
+usa               93
+us                31
+canada            26
+united kingdom    22
+united states      7
+uk                 7
+gb                 3
+Name: count, dtype: int64
+
+--- INVALID_EMAILS ---
+4     NaN
+12    NaN
+18    NaN
+25    NaN
+30    NaN
+44    NaN
+52    NaN
+57    NaN
+62    NaN
+69    NaN
+Name: Email, dtype: object
+
+--- INVALID_PHONES ---
+7               NaN
+9     invalid_email
+22              NaN
+27    invalid_phone
+35              NaN
+41              NaN
+45    invalid_phone
+53    invalid_phone
+61    invalid_email
+70    invalid_phone
+Name: Phone, dtype: object
+
+--- INVALID_QUANTITIES ---
+3    -1
+9     0
+16    0
+21   -2
+26    0
+32   -5
+37    0
+43   -3
+46    0
+52   -1
+Name: Quantity, dtype: int64
+
+--- INVALID_AGES ---
+4     unknown
+5          -5
+7         999
+18        NaN
+19        NaN
+22        150
+24    unknown
+26        -10
+31        999
+35         -2
+Name: CustomerAge, dtype: object
+
+--- INVALID_DATES ---
+Series([], Name: OrderDate, dtype: object)
+
+--- INVALID_PRICES ---
+14    NaN
+25    NaN
+38    NaN
+47    NaN
+64    NaN
+75    NaN
+87    NaN
+94    NaN
+103   NaN
+111   NaN
+Name: Price, dtype: float64
+
+STEP 4: DATA CLEANING
+
+STEP 5: VALIDATION
+
+Data types and non-null counts:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 189 entries, 0 to 188
+Data columns (total 10 columns):
+ #   Column        Non-Null Count  Dtype         
+---  ------        --------------  -----         
+ 0   OrderID       189 non-null    int64         
+ 1   CustomerName  189 non-null    object        
+ 2   Email         165 non-null    object        
+ 3   Phone         156 non-null    object        
+ 4   Country       189 non-null    object        
+ 5   OrderDate     119 non-null    datetime64[ns]
+ 6   Quantity      145 non-null    float64       
+ 7   Price         168 non-null    float64       
+ 8   CustomerAge   91 non-null     float64       
+ 9   OrderStatus   189 non-null    object        
+dtypes: datetime64[ns](1), float64(3), int64(1), object(5)
+memory usage: 14.9+ KB
+None
+
+======================================================================
+Summary of missing values:
+OrderID          0
+CustomerName     0
+Email           24
+Phone           33
+Country          0
+OrderDate       70
+Quantity        44
+Price           21
+CustomerAge     98
+OrderStatus      0
+dtype: int64
+
+======================================================================
+Saved cleaned dataset as cleaned_orders.csv
+
+SUMMARY:
+Original rows: 189
+Clean rows:    189
+Completed at: 2025-12-12 13:40:52
