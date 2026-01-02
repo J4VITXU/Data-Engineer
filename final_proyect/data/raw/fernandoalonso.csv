@@ -1,0 +1,385 @@
+race_number,year,grand_prix,team,driver_number,constructor,car,engine_type,tyre,grid_position,race_position,event
+1,2001,Australia,European Minardi F1,21,Minardi,PS01,European V10,Michelin,19,12,
+2,2001,Malaysia,European Minardi F1,21,Minardi,PS01,European V10,Michelin,21,13,
+3,2001,Brazil,European Minardi F1,21,Minardi,PS01,European V10,Michelin,19,ab,Electronics
+4,2001,San Marino,European Minardi F1,21,Minardi,PS01,European V10,Michelin,18,ab,Accident
+5,2001,Spain,European Minardi F1,21,Minardi,PS01,European V10,Michelin,18,13,
+6,2001,Austria,European Minardi F1,21,Minardi,PS01,European V10,Michelin,18,ab,Clutch
+7,2001,Monaco,European Minardi F1,21,Minardi,PS01,European V10,Michelin,18,ab,Gearbox
+8,2001,Canada,European Minardi F1,21,Minardi,PS01,European V10,Michelin,22,ab,Transmission
+9,2001,Europe,European Minardi F1,21,Minardi,PS01,European V10,Michelin,21,14,
+10,2001,France,European Minardi F1,21,Minardi,PS01,European V10,Michelin,21,17,Engine
+11,2001,Britain,European Minardi F1,21,Minardi,PS01,European V10,Michelin,21,16,
+12,2001,Germany,European Minardi F1,21,Minardi,PS01,European V10,Michelin,21,10,
+13,2001,Hungary,European Minardi F1,21,Minardi,PS01,European V10,Michelin,18,ab,Runway exit
+14,2001,Belgium,European Minardi F1,21,Minardi,PS01,European V10,Michelin,20,ab,Gearbox
+15,2001,Italy,European Minardi F1,21,Minardi,PS01,European V10,Michelin,21,13,
+16,2001,USA,European Minardi F1,21,Minardi,PS01,European V10,Michelin,17,ab,Transmission
+17,2001,Japan,European Minardi F1,21,Minardi,PS01,European V10,Michelin,18,11,
+18,2003,Australia,Mild Seven Renault F1 Team,8,Renault,R23,Renault V10,Michelin,10,7,
+19,2003,Malaysia,Mild Seven Renault F1 Team,8,Renault,R23,Renault V10,Michelin,1,3,
+20,2003,Brazil,Mild Seven Renault F1 Team,8,Renault,R23,Renault V10,Michelin,10,3,
+21,2003,San Marino,Mild Seven Renault F1 Team,8,Renault,R23,Renault V10,Michelin,8,6,
+22,2003,Spain,Mild Seven Renault F1 Team,8,Renault,R23,Renault V10,Michelin,3,2,
+23,2003,Austria,Mild Seven Renault F1 Team,8,Renault,R23,Renault V10,Michelin,19,ab,Engine
+24,2003,Monaco,Mild Seven Renault F1 Team,8,Renault,R23,Renault V10,Michelin,8,5,
+25,2003,Canada,Mild Seven Renault F1 Team,8,Renault,R23,Renault V10,Michelin,4,4,
+26,2003,Europe,Mild Seven Renault F1 Team,8,Renault,R23,Renault V10,Michelin,8,4,
+27,2003,France,Mild Seven Renault F1 Team,8,Renault,R23,Renault V10,Michelin,7,ab,Engine
+28,2003,Britain,Mild Seven Renault F1 Team,8,Renault,R23B,Renault V10,Michelin,8,ab,Gearbox
+29,2003,Germany,Mild Seven Renault F1 Team,8,Renault,R23B,Renault V10,Michelin,8,4,
+30,2003,Hungary,Mild Seven Renault F1 Team,8,Renault,R23B,Renault V10,Michelin,1,1,
+31,2003,Italy,Mild Seven Renault F1 Team,8,Renault,R23B,Renault V10,Michelin,20,8,
+32,2003,USA,Mild Seven Renault F1 Team,8,Renault,R23B,Renault V10,Michelin,6,ab,Engine
+33,2003,Japan,Mild Seven Renault F1 Team,8,Renault,R23B,Renault V10,Michelin,5,ab,Engine
+34,2004,Australia,Mild Seven Renault F1 Team,8,Renault,R24,Renault V10,Michelin,5,3,
+35,2004,Malaysia,Mild Seven Renault F1 Team,8,Renault,R24,Renault V10,Michelin,19,7,
+36,2004,Bahrain,Mild Seven Renault F1 Team,8,Renault,R24,Renault V10,Michelin,16,6,
+37,2004,San Marino,Mild Seven Renault F1 Team,8,Renault,R24,Renault V10,Michelin,6,4,
+38,2004,Spain,Mild Seven Renault F1 Team,8,Renault,R24,Renault V10,Michelin,8,4,
+39,2004,Monaco,Mild Seven Renault F1 Team,8,Renault,R24,Renault V10,Michelin,3,ab,Accident
+40,2004,Europe,Mild Seven Renault F1 Team,8,Renault,R24,Renault V10,Michelin,6,5,
+41,2004,Canada,Mild Seven Renault F1 Team,8,Renault,R24,Renault V10,Michelin,5,ab,Transmission
+42,2004,USA,Mild Seven Renault F1 Team,8,Renault,R24,Renault V10,Michelin,9,ab,Puncture
+43,2004,France,Mild Seven Renault F1 Team,8,Renault,R24,Renault V10,Michelin,1,2,
+44,2004,Britain,Mild Seven Renault F1 Team,8,Renault,R24,Renault V10,Michelin,16,10,
+45,2004,Germany,Mild Seven Renault F1 Team,8,Renault,R24,Renault V10,Michelin,5,3,
+46,2004,Hungary,Mild Seven Renault F1 Team,8,Renault,R24,Renault V10,Michelin,5,3,
+47,2004,Belgium,Mild Seven Renault F1 Team,8,Renault,R24,Renault V10,Michelin,3,ab,Spin
+48,2004,Italy,Mild Seven Renault F1 Team,8,Renault,R24,Renault V10,Michelin,4,ab,Spin
+49,2004,China,Mild Seven Renault F1 Team,8,Renault,R24,Renault V10,Michelin,6,4,
+50,2004,Japan,Mild Seven Renault F1 Team,8,Renault,R24,Renault V10,Michelin,11,5,
+51,2004,Brazil,Mild Seven Renault F1 Team,8,Renault,R24,Renault V10,Michelin,8,4,
+52,2005,Australia,Mild Seven Renault F1 Team,5,Renault,R25,Renault V10,Michelin,13,3,
+53,2005,Malaysia,Mild Seven Renault F1 Team,5,Renault,R25,Renault V10,Michelin,1,1,
+54,2005,Bahrain,Mild Seven Renault F1 Team,5,Renault,R25,Renault V10,Michelin,1,1,
+55,2005,San Marino,Mild Seven Renault F1 Team,5,Renault,R25,Renault V10,Michelin,2,1,
+56,2005,Spain,Mild Seven Renault F1 Team,5,Renault,R25,Renault V10,Michelin,3,2,
+57,2005,Monaco,Mild Seven Renault F1 Team,5,Renault,R25,Renault V10,Michelin,2,4,
+58,2005,Europe,Mild Seven Renault F1 Team,5,Renault,R25,Renault V10,Michelin,6,1,
+59,2005,Canada,Mild Seven Renault F1 Team,5,Renault,R25,Renault V10,Michelin,3,ab,Accident
+60,2005,USA,Mild Seven Renault F1 Team,5,Renault,R25,Renault V10,Michelin,6,f,Withdrew
+61,2005,France,Mild Seven Renault F1 Team,5,Renault,R25,Renault V10,Michelin,1,1,
+62,2005,Britain,Mild Seven Renault F1 Team,5,Renault,R25,Renault V10,Michelin,1,2,
+63,2005,Germany,Mild Seven Renault F1 Team,5,Renault,R25,Renault V10,Michelin,3,1,
+64,2005,Hungary,Mild Seven Renault F1 Team,5,Renault,R25,Renault V10,Michelin,6,11,
+65,2005,Turkey,Mild Seven Renault F1 Team,5,Renault,R25,Renault V10,Michelin,3,2,
+66,2005,Italy,Mild Seven Renault F1 Team,5,Renault,R25,Renault V10,Michelin,2,2,
+67,2005,Belgium,Mild Seven Renault F1 Team,5,Renault,R25,Renault V10,Michelin,4,2,
+68,2005,Brazil,Mild Seven Renault F1 Team,5,Renault,R25,Renault V10,Michelin,1,3,
+69,2005,Japan,Mild Seven Renault F1 Team,5,Renault,R25,Renault V10,Michelin,16,3,
+70,2005,China,Mild Seven Renault F1 Team,5,Renault,R25,Renault V10,Michelin,1,1,
+71,2006,Bahrain,Mild Seven Renault F1 Team,1,Renault,R26,Renault V8,Michelin,4,1,
+72,2006,Malaysia,Mild Seven Renault F1 Team,1,Renault,R26,Renault V8,Michelin,7,2,
+73,2006,Australia,Mild Seven Renault F1 Team,1,Renault,R26,Renault V8,Michelin,3,1,
+74,2006,San Marino,Mild Seven Renault F1 Team,1,Renault,R26,Renault V8,Michelin,5,2,
+75,2006,Europe,Mild Seven Renault F1 Team,1,Renault,R26,Renault V8,Michelin,1,2,
+76,2006,Spain,Mild Seven Renault F1 Team,1,Renault,R26,Renault V8,Michelin,1,1,
+77,2006,Monaco,Mild Seven Renault F1 Team,1,Renault,R26,Renault V8,Michelin,1,1,
+78,2006,Britain,Mild Seven Renault F1 Team,1,Renault,R26,Renault V8,Michelin,1,1,
+79,2006,Canada,Mild Seven Renault F1 Team,1,Renault,R26,Renault V8,Michelin,1,1,
+80,2006,USA,Mild Seven Renault F1 Team,1,Renault,R26,Renault V8,Michelin,5,5,
+81,2006,France,Mild Seven Renault F1 Team,1,Renault,R26,Renault V8,Michelin,3,2,
+82,2006,Germany,Mild Seven Renault F1 Team,1,Renault,R26,Renault V8,Michelin,7,5,
+83,2006,Hungary,Mild Seven Renault F1 Team,1,Renault,R26,Renault V8,Michelin,15,ab,Wheel nut
+84,2006,Turkey,Mild Seven Renault F1 Team,1,Renault,R26,Renault V8,Michelin,3,2,
+85,2006,Italy,Mild Seven Renault F1 Team,1,Renault,R26,Renault V8,Michelin,10,ab,Engine
+86,2006,China,Mild Seven Renault F1 Team,1,Renault,R26,Renault V8,Michelin,1,2,
+87,2006,Japan,Mild Seven Renault F1 Team,1,Renault,R26,Renault V8,Michelin,5,1,
+88,2006,Brazil,Mild Seven Renault F1 Team,1,Renault,R26,Renault V8,Michelin,4,2,
+89,2007,Australia,Vodafone McLaren Mercedes,1,McLaren,MP4-22,Mercedes V8,Bridgestone,2,2,
+90,2007,Malaysia,Vodafone McLaren Mercedes,1,McLaren,MP4-22,Mercedes V8,Bridgestone,2,1,
+91,2007,Bahrain,Vodafone McLaren Mercedes,1,McLaren,MP4-22,Mercedes V8,Bridgestone,4,5,
+92,2007,Spain,Vodafone McLaren Mercedes,1,McLaren,MP4-22,Mercedes V8,Bridgestone,2,3,
+93,2007,Monaco,Vodafone McLaren Mercedes,1,McLaren,MP4-22,Mercedes V8,Bridgestone,1,1,
+94,2007,Canada,Vodafone McLaren Mercedes,1,McLaren,MP4-22,Mercedes V8,Bridgestone,2,7,
+95,2007,USA,Vodafone McLaren Mercedes,1,McLaren,MP4-22,Mercedes V8,Bridgestone,2,2,
+96,2007,France,Vodafone McLaren Mercedes,1,McLaren,MP4-22,Mercedes V8,Bridgestone,10,7,
+97,2007,Britain,Vodafone McLaren Mercedes,1,McLaren,MP4-22,Mercedes V8,Bridgestone,3,2,
+98,2007,Europe,Vodafone McLaren Mercedes,1,McLaren,MP4-22,Mercedes V8,Bridgestone,2,1,
+99,2007,Hungary,Vodafone McLaren Mercedes,1,McLaren,MP4-22,Mercedes V8,Bridgestone,6,4,
+100,2007,Turkey,Vodafone McLaren Mercedes,1,McLaren,MP4-22,Mercedes V8,Bridgestone,4,3,
+101,2007,Italy,Vodafone McLaren Mercedes,1,McLaren,MP4-22,Mercedes V8,Bridgestone,1,1,
+102,2007,Belgium,Vodafone McLaren Mercedes,1,McLaren,MP4-22,Mercedes V8,Bridgestone,3,3,
+103,2007,Japan,Vodafone McLaren Mercedes,1,McLaren,MP4-22,Mercedes V8,Bridgestone,2,ab,Accident
+104,2007,China,Vodafone McLaren Mercedes,1,McLaren,MP4-22,Mercedes V8,Bridgestone,4,2,
+105,2007,Brazil,Vodafone McLaren Mercedes,1,McLaren,MP4-22,Mercedes V8,Bridgestone,4,3,
+106,2008,Australia,ING Renault F1 Team,5,Renault,R28,Renault V8,Bridgestone,11,4,
+107,2008,Malaysia,ING Renault F1 Team,5,Renault,R28,Renault V8,Bridgestone,7,8,
+108,2008,Bahrain,ING Renault F1 Team,5,Renault,R28,Renault V8,Bridgestone,10,10,
+109,2008,Spain,ING Renault F1 Team,5,Renault,R28,Renault V8,Bridgestone,2,ab,Engine
+110,2008,Turkey,ING Renault F1 Team,5,Renault,R28,Renault V8,Bridgestone,7,6,
+111,2008,Monaco,ING Renault F1 Team,5,Renault,R28,Renault V8,Bridgestone,7,10,
+112,2008,Canada,ING Renault F1 Team,5,Renault,R28,Renault V8,Bridgestone,4,ab,Accident
+113,2008,France,ING Renault F1 Team,5,Renault,R28,Renault V8,Bridgestone,3,8,
+114,2008,Britain,ING Renault F1 Team,5,Renault,R28,Renault V8,Bridgestone,6,6,
+115,2008,Germany,ING Renault F1 Team,5,Renault,R28,Renault V8,Bridgestone,5,11,
+116,2008,Hungary,ING Renault F1 Team,5,Renault,R28,Renault V8,Bridgestone,7,4,
+117,2008,Europe,ING Renault F1 Team,5,Renault,R28,Renault V8,Bridgestone,12,ab,Collision
+118,2008,Belgium,ING Renault F1 Team,5,Renault,R28,Renault V8,Bridgestone,6,4,
+119,2008,Italy,ING Renault F1 Team,5,Renault,R28,Renault V8,Bridgestone,8,4,
+120,2008,Singapore,ING Renault F1 Team,5,Renault,R28,Renault V8,Bridgestone,15,1,
+121,2008,Japan,ING Renault F1 Team,5,Renault,R28,Renault V8,Bridgestone,4,1,
+122,2008,China,ING Renault F1 Team,5,Renault,R28,Renault V8,Bridgestone,4,4,
+123,2008,Brazil,ING Renault F1 Team,5,Renault,R28,Renault V8,Bridgestone,6,2,
+124,2009,Australia,ING Renault F1 Team,7,Renault,R29,Renault V8,Bridgestone,10,5,
+125,2009,Malaysia,ING Renault F1 Team,7,Renault,R29,Renault V8,Bridgestone,9,11,
+126,2009,China,ING Renault F1 Team,7,Renault,R29,Renault V8,Bridgestone,2,9,
+127,2009,Bahrain,ING Renault F1 Team,7,Renault,R29,Renault V8,Bridgestone,7,8,
+128,2009,Spain,ING Renault F1 Team,7,Renault,R29,Renault V8,Bridgestone,8,5,
+129,2009,Monaco,ING Renault F1 Team,7,Renault,R29,Renault V8,Bridgestone,9,7,
+130,2009,Turkey,ING Renault F1 Team,7,Renault,R29,Renault V8,Bridgestone,8,10,
+131,2009,Britain,ING Renault F1 Team,7,Renault,R29,Renault V8,Bridgestone,10,14,
+132,2009,Germany,ING Renault F1 Team,7,Renault,R29,Renault V8,Bridgestone,12,7,
+133,2009,Hungary,ING Renault F1 Team,7,Renault,R29,Renault V8,Bridgestone,1,ab,Fuel pump
+134,2009,Europe,ING Renault F1 Team,7,Renault,R29,Renault V8,Bridgestone,8,6,
+135,2009,Belgium,ING Renault F1 Team,7,Renault,R29,Renault V8,Bridgestone,13,ab,Wheel
+136,2009,Italy,ING Renault F1 Team,7,Renault,R29,Renault V8,Bridgestone,8,5,
+137,2009,Singapore,Renault F1 Team,7,Renault,R29,Renault V8,Bridgestone,5,3,
+138,2009,Japan,Renault F1 Team,7,Renault,R29,Renault V8,Bridgestone,16,10,
+139,2009,Brazil,Renault F1 Team,7,Renault,R29,Renault V8,Bridgestone,10,ab,Collision
+140,2009,Abu Dhabi,Renault F1 Team,7,Renault,R29,Renault V8,Bridgestone,15,14,
+141,2010,Bahrain,Scuderia Ferrari Marlboro,8,Ferrari,F10,Ferrari V8,Bridgestone,3,1,
+142,2010,Australia,Scuderia Ferrari Marlboro,8,Ferrari,F10,Ferrari V8,Bridgestone,3,4,
+143,2010,Malaysia,Scuderia Ferrari Marlboro,8,Ferrari,F10,Ferrari V8,Bridgestone,19,13,Engine
+144,2010,China,Scuderia Ferrari Marlboro,8,Ferrari,F10,Ferrari V8,Bridgestone,3,4,
+145,2010,Spain,Scuderia Ferrari Marlboro,8,Ferrari,F10,Ferrari V8,Bridgestone,4,2,
+146,2010,Monaco,Scuderia Ferrari Marlboro,8,Ferrari,F10,Ferrari V8,Bridgestone,24,6,
+147,2010,Turkey,Scuderia Ferrari Marlboro,8,Ferrari,F10,Ferrari V8,Bridgestone,12,8,
+148,2010,Canada,Scuderia Ferrari Marlboro,8,Ferrari,F10,Ferrari V8,Bridgestone,3,3,
+149,2010,Europe,Scuderia Ferrari Marlboro,8,Ferrari,F10,Ferrari V8,Bridgestone,4,8,
+150,2010,Britain,Scuderia Ferrari Marlboro,8,Ferrari,F10,Ferrari V8,Bridgestone,3,14,
+151,2010,Germany,Scuderia Ferrari Marlboro,8,Ferrari,F10,Ferrari V8,Bridgestone,2,1,
+152,2010,Hungary,Scuderia Ferrari Marlboro,8,Ferrari,F10,Ferrari V8,Bridgestone,3,2,
+153,2010,Belgium,Scuderia Ferrari Marlboro,8,Ferrari,F10,Ferrari V8,Bridgestone,10,ab,Accident
+154,2010,Italy,Scuderia Ferrari Marlboro,8,Ferrari,F10,Ferrari V8,Bridgestone,1,1,
+155,2010,Singapore,Scuderia Ferrari Marlboro,8,Ferrari,F10,Ferrari V8,Bridgestone,1,1,
+156,2010,Japan,Scuderia Ferrari Marlboro,8,Ferrari,F10,Ferrari V8,Bridgestone,4,3,
+157,2010,South Korea,Scuderia Ferrari Marlboro,8,Ferrari,F10,Ferrari V8,Bridgestone,3,1,
+158,2010,Brazil,Scuderia Ferrari Marlboro,8,Ferrari,F10,Ferrari V8,Bridgestone,5,3,
+159,2010,Abu Dhabi,Scuderia Ferrari Marlboro,8,Ferrari,F10,Ferrari V8,Bridgestone,3,7,
+160,2011,Australia,Scuderia Ferrari Marlboro,5,Ferrari,150° Italia,Ferrari V8,Pirelli,5,4,
+161,2011,Malaysia,Scuderia Ferrari Marlboro,5,Ferrari,150° Italia,Ferrari V8,Pirelli,5,6,20s penalty
+162,2011,China,Scuderia Ferrari Marlboro,5,Ferrari,150° Italia,Ferrari V8,Pirelli,5,7,
+163,2011,Turkey,Scuderia Ferrari Marlboro,5,Ferrari,150° Italia,Ferrari V8,Pirelli,5,3,
+164,2011,Spain,Scuderia Ferrari Marlboro,5,Ferrari,150° Italia,Ferrari V8,Pirelli,4,5,
+165,2011,Monaco,Scuderia Ferrari Marlboro,5,Ferrari,150° Italia,Ferrari V8,Pirelli,4,2,
+166,2011,Canada,Scuderia Ferrari Marlboro,5,Ferrari,150° Italia,Ferrari V8,Pirelli,2,ab,Collision
+167,2011,Europe,Scuderia Ferrari Marlboro,5,Ferrari,150° Italia,Ferrari V8,Pirelli,4,2,
+168,2011,Britain,Scuderia Ferrari,5,Ferrari,150° Italia,Ferrari V8,Pirelli,3,1,
+169,2011,Germany,Scuderia Ferrari,5,Ferrari,150° Italia,Ferrari V8,Pirelli,4,2,
+170,2011,Hungary,Scuderia Ferrari,5,Ferrari,150° Italia,Ferrari V8,Pirelli,5,3,
+171,2011,Belgium,Scuderia Ferrari,5,Ferrari,150° Italia,Ferrari V8,Pirelli,8,4,
+172,2011,Italy,Scuderia Ferrari,5,Ferrari,150° Italia,Ferrari V8,Pirelli,4,3,
+173,2011,Singapore,Scuderia Ferrari,5,Ferrari,150° Italia,Ferrari V8,Pirelli,5,4,
+174,2011,Japan,Scuderia Ferrari,5,Ferrari,150° Italia,Ferrari V8,Pirelli,5,2,
+175,2011,South Korea,Scuderia Ferrari,5,Ferrari,150° Italia,Ferrari V8,Pirelli,6,5,
+176,2011,India,Scuderia Ferrari,5,Ferrari,150° Italia,Ferrari V8,Pirelli,3,3,
+177,2011,Abu Dhabi,Scuderia Ferrari,5,Ferrari,150° Italia,Ferrari V8,Pirelli,5,2,
+178,2011,Brazil,Scuderia Ferrari,5,Ferrari,150° Italia,Ferrari V8,Pirelli,5,4,
+179,2012,Australia,Scuderia Ferrari,5,Ferrari,F2012,Ferrari V8,Pirelli,12,5,
+180,2012,Malaysia,Scuderia Ferrari,5,Ferrari,F2012,Ferrari V8,Pirelli,8,1,
+181,2012,China,Scuderia Ferrari,5,Ferrari,F2012,Ferrari V8,Pirelli,9,9,
+182,2012,Bahrain,Scuderia Ferrari,5,Ferrari,F2012,Ferrari V8,Pirelli,9,7,
+183,2012,Spain,Scuderia Ferrari,5,Ferrari,F2012,Ferrari V8,Pirelli,2,2,
+184,2012,Monaco,Scuderia Ferrari,5,Ferrari,F2012,Ferrari V8,Pirelli,5,3,
+185,2012,Canada,Scuderia Ferrari,5,Ferrari,F2012,Ferrari V8,Pirelli,3,5,
+186,2012,Europe,Scuderia Ferrari,5,Ferrari,F2012,Ferrari V8,Pirelli,11,1,
+187,2012,Britain,Scuderia Ferrari,5,Ferrari,F2012,Ferrari V8,Pirelli,1,2,
+188,2012,Germany,Scuderia Ferrari,5,Ferrari,F2012,Ferrari V8,Pirelli,1,1,
+189,2012,Hungary,Scuderia Ferrari,5,Ferrari,F2012,Ferrari V8,Pirelli,6,5,
+190,2012,Belgium,Scuderia Ferrari,5,Ferrari,F2012,Ferrari V8,Pirelli,5,ab,Pile-up
+191,2012,Italy,Scuderia Ferrari,5,Ferrari,F2012,Ferrari V8,Pirelli,10,3,
+192,2012,Singapore,Scuderia Ferrari,5,Ferrari,F2012,Ferrari V8,Pirelli,5,3,
+193,2012,Japan,Scuderia Ferrari,5,Ferrari,F2012,Ferrari V8,Pirelli,6,ab,Puncture
+194,2012,South Korea,Scuderia Ferrari,5,Ferrari,F2012,Ferrari V8,Pirelli,4,3,
+195,2012,India,Scuderia Ferrari,5,Ferrari,F2012,Ferrari V8,Pirelli,5,2,
+196,2012,Abu Dhabi,Scuderia Ferrari,5,Ferrari,F2012,Ferrari V8,Pirelli,6,2,
+197,2012,USA,Scuderia Ferrari,5,Ferrari,F2012,Ferrari V8,Pirelli,7,3,
+198,2012,Brazil,Scuderia Ferrari,5,Ferrari,F2012,Ferrari V8,Pirelli,7,2,
+199,2013,Australia,Scuderia Ferrari,3,Ferrari,F138,Ferrari V8,Pirelli,5,2,
+200,2013,Malaysia,Scuderia Ferrari,3,Ferrari,F138,Ferrari V8,Pirelli,3,ab,Runway exit
+201,2013,China,Scuderia Ferrari,3,Ferrari,F138,Ferrari V8,Pirelli,3,1,
+202,2013,Bahrain,Scuderia Ferrari,3,Ferrari,F138,Ferrari V8,Pirelli,3,8,
+203,2013,Spain,Scuderia Ferrari,3,Ferrari,F138,Ferrari V8,Pirelli,5,1,
+204,2013,Monaco,Scuderia Ferrari,3,Ferrari,F138,Ferrari V8,Pirelli,6,7,
+205,2013,Canada,Scuderia Ferrari,3,Ferrari,F138,Ferrari V8,Pirelli,6,2,
+206,2013,Britain,Scuderia Ferrari,3,Ferrari,F138,Ferrari V8,Pirelli,9,3,
+207,2013,Germany,Scuderia Ferrari,3,Ferrari,F138,Ferrari V8,Pirelli,8,4,
+208,2013,Hungary,Scuderia Ferrari,3,Ferrari,F138,Ferrari V8,Pirelli,5,5,
+209,2013,Belgium,Scuderia Ferrari,3,Ferrari,F138,Ferrari V8,Pirelli,9,2,
+210,2013,Italy,Scuderia Ferrari,3,Ferrari,F138,Ferrari V8,Pirelli,5,2,
+211,2013,Singapore,Scuderia Ferrari,3,Ferrari,F138,Ferrari V8,Pirelli,7,2,
+212,2013,South Korea,Scuderia Ferrari,3,Ferrari,F138,Ferrari V8,Pirelli,5,6,
+213,2013,Japan,Scuderia Ferrari,3,Ferrari,F138,Ferrari V8,Pirelli,8,4,
+214,2013,India,Scuderia Ferrari,3,Ferrari,F138,Ferrari V8,Pirelli,8,11,
+215,2013,Abu Dhabi,Scuderia Ferrari,3,Ferrari,F138,Ferrari V8,Pirelli,10,5,
+216,2013,USA,Scuderia Ferrari,3,Ferrari,F138,Ferrari V8,Pirelli,6,5,
+217,2013,Brazil,Scuderia Ferrari,3,Ferrari,F138,Ferrari V8,Pirelli,3,3,
+218,2014,Australia,Scuderia Ferrari,14,Ferrari,F14 T,Ferrari V6 t h,Pirelli,5,4,
+219,2014,Malaysia,Scuderia Ferrari,14,Ferrari,F14 T,Ferrari V6 t h,Pirelli,4,4,
+220,2014,Bahrain,Scuderia Ferrari,14,Ferrari,F14 T,Ferrari V6 t h,Pirelli,9,9,
+221,2014,China,Scuderia Ferrari,14,Ferrari,F14 T,Ferrari V6 t h,Pirelli,5,3,
+222,2014,Spain,Scuderia Ferrari,14,Ferrari,F14 T,Ferrari V6 t h,Pirelli,7,6,
+223,2014,Monaco,Scuderia Ferrari,14,Ferrari,F14 T,Ferrari V6 t h,Pirelli,5,4,
+224,2014,Canada,Scuderia Ferrari,14,Ferrari,F14 T,Ferrari V6 t h,Pirelli,7,6,
+225,2014,Austria,Scuderia Ferrari,14,Ferrari,F14 T,Ferrari V6 t h,Pirelli,4,5,
+226,2014,Britain,Scuderia Ferrari,14,Ferrari,F14 T,Ferrari V6 t h,Pirelli,16,6,
+227,2014,Germany,Scuderia Ferrari,14,Ferrari,F14 T,Ferrari V6 t h,Pirelli,7,5,
+228,2014,Hungary,Scuderia Ferrari,14,Ferrari,F14 T,Ferrari V6 t h,Pirelli,5,2,
+229,2014,Belgium,Scuderia Ferrari,14,Ferrari,F14 T,Ferrari V6 t h,Pirelli,4,7,
+230,2014,Italy,Scuderia Ferrari,14,Ferrari,F14 T,Ferrari V6 t h,Pirelli,7,ab,KERS
+231,2014,Singapore,Scuderia Ferrari,14,Ferrari,F14 T,Ferrari V6 t h,Pirelli,5,4,
+232,2014,Japan,Scuderia Ferrari,14,Ferrari,F14 T,Ferrari V6 t h,Pirelli,5,ab,Electrics
+233,2014,Russia,Scuderia Ferrari,14,Ferrari,F14 T,Ferrari V6 t h,Pirelli,7,6,
+234,2014,USA,Scuderia Ferrari,14,Ferrari,F14 T,Ferrari V6 t h,Pirelli,6,6,
+235,2014,Brazil,Scuderia Ferrari,14,Ferrari,F14 T,Ferrari V6 t h,Pirelli,8,6,
+236,2014,Abu Dhabi,Scuderia Ferrari,14,Ferrari,F14 T,Ferrari V6 t h,Pirelli,8,9,
+237,2015,Malaysia,McLaren Honda,14,McLaren,MP4-30,Honda V6 t h,Pirelli,18,ab,ERS
+238,2015,China,McLaren Honda,14,McLaren,MP4-30,Honda V6 t h,Pirelli,18,12,
+239,2015,Bahrain,McLaren Honda,14,McLaren,MP4-30,Honda V6 t h,Pirelli,14,11,
+240,2015,Spain,McLaren Honda,14,McLaren,MP4-30,Honda V6 t h,Pirelli,13,ab,Brakes
+241,2015,Monaco,McLaren Honda,14,McLaren,MP4-30,Honda V6 t h,Pirelli,13,ab,Overheating
+242,2015,Canada,McLaren Honda,14,McLaren,MP4-30,Honda V6 t h,Pirelli,13,ab,Exhaust
+243,2015,Austria,McLaren Honda,14,McLaren,MP4-30,Honda V6 t h,Pirelli,19,ab,Collision
+244,2015,Britain,McLaren Honda,14,McLaren,MP4-30,Honda V6 t h,Pirelli,17,10,
+245,2015,Hungary,McLaren Honda,14,McLaren,MP4-30,Honda V6 t h,Pirelli,15,5,
+246,2015,Belgium,McLaren Honda,14,McLaren,MP4-30,Honda V6 t h,Pirelli,20,13,
+247,2015,Italy,McLaren Honda,14,McLaren,MP4-30,Honda V6 t h,Pirelli,16,18,Power loss
+248,2015,Singapore,McLaren Honda,14,McLaren,MP4-30,Honda V6 t h,Pirelli,12,ab,Gearbox
+249,2015,Japan,McLaren Honda,14,McLaren,MP4-30,Honda V6 t h,Pirelli,12,11,
+250,2015,Russia,McLaren Honda,14,McLaren,MP4-30,Honda V6 t h,Pirelli,19,11,5s penalty
+251,2015,USA,McLaren Honda,14,McLaren,MP4-30,Honda V6 t h,Pirelli,9,11,
+252,2015,Mexico,McLaren Honda,14,McLaren,MP4-30,Honda V6 t h,Pirelli,18,ab,Power loss
+253,2015,Brazil,McLaren Honda,14,McLaren,MP4-30,Honda V6 t h,Pirelli,20,15,
+254,2015,Abu Dhabi,McLaren Honda,14,McLaren,MP4-30,Honda V6 t h,Pirelli,16,17,
+255,2016,Australia,McLaren-Honda Formula 1 Team,14,McLaren,MP4-31,Honda V6 t h,Pirelli,11,ab,Collision
+256,2016,Bahrain,McLaren-Honda Formula 1 Team,14,McLaren,MP4-31,Honda V6 t h,Pirelli,,f,Injury
+257,2016,China,McLaren-Honda Formula 1 Team,14,McLaren,MP4-31,Honda V6 t h,Pirelli,11,12,
+258,2016,Russia,McLaren-Honda Formula 1 Team,14,McLaren,MP4-31,Honda V6 t h,Pirelli,14,6,
+259,2016,Spain,McLaren-Honda Formula 1 Team,14,McLaren,MP4-31,Honda V6 t h,Pirelli,10,ab,Power loss
+260,2016,Monaco,McLaren-Honda Formula 1 Team,14,McLaren,MP4-31,Honda V6 t h,Pirelli,9,5,
+261,2016,Canada,McLaren-Honda Formula 1 Team,14,McLaren,MP4-31,Honda V6 t h,Pirelli,10,11,
+262,2016,Europe,McLaren-Honda Formula 1 Team,14,McLaren,MP4-31,Honda V6 t h,Pirelli,13,ab,Gearbox
+263,2016,Austria,McLaren-Honda Formula 1 Team,14,McLaren,MP4-31,Honda V6 t h,Pirelli,14,18,ERS
+264,2016,Britain,McLaren-Honda Formula 1 Team,14,McLaren,MP4-31,Honda V6 t h,Pirelli,9,13,
+265,2016,Hungary,McLaren-Honda Formula 1 Team,14,McLaren,MP4-31,Honda V6 t h,Pirelli,7,7,
+266,2016,Germany,McLaren-Honda Formula 1 Team,14,McLaren,MP4-31,Honda V6 t h,Pirelli,13,12,
+267,2016,Belgium,McLaren-Honda Formula 1 Team,14,McLaren,MP4-31,Honda V6 t h,Pirelli,22,7,
+268,2016,Italy,McLaren-Honda Formula 1 Team,14,McLaren,MP4-31,Honda V6 t h,Pirelli,12,14,
+269,2016,Singapore,McLaren-Honda Formula 1 Team,14,McLaren,MP4-31,Honda V6 t h,Pirelli,9,7,
+270,2016,Malaysia,McLaren-Honda Formula 1 Team,14,McLaren,MP4-31,Honda V6 t h,Pirelli,22,7,
+271,2016,Japan,McLaren-Honda Formula 1 Team,14,McLaren,MP4-31,Honda V6 t h,Pirelli,15,16,
+272,2016,USA,McLaren-Honda Formula 1 Team,14,McLaren,MP4-31,Honda V6 t h,Pirelli,12,5,
+273,2016,Mexico,McLaren-Honda Formula 1 Team,14,McLaren,MP4-31,Honda V6 t h,Pirelli,11,13,
+274,2016,Brazil,McLaren-Honda Formula 1 Team,14,McLaren,MP4-31,Honda V6 t h,Pirelli,10,10,
+275,2016,Abu Dhabi,McLaren-Honda Formula 1 Team,14,McLaren,MP4-31,Honda V6 t h,Pirelli,9,10,
+276,2017,Australia,McLaren-Honda Formula 1 Team,14,McLaren,MCL32,Honda V6 t h,Pirelli,12,ab,Suspension
+277,2017,China,McLaren-Honda Formula 1 Team,14,McLaren,MCL32,Honda V6 t h,Pirelli,13,ab,Transmission
+278,2017,Bahrain,McLaren-Honda Formula 1 Team,14,McLaren,MCL32,Honda V6 t h,Pirelli,15,14,Engine
+279,2017,Russia,McLaren-Honda Formula 1 Team,14,McLaren,MCL32,Honda V6 t h,Pirelli,15,np,Electronics
+280,2017,Spain,McLaren-Honda Formula 1 Team,14,McLaren,MCL32,Honda V6 t h,Pirelli,7,12,
+281,2017,Canada,McLaren-Honda Formula 1 Team,14,McLaren,MCL32,Honda V6 t h,Pirelli,12,16,Engine
+282,2017,Azerbaijan,McLaren-Honda Formula 1 Team,14,McLaren,MCL32,Honda V6 t h,Pirelli,19,9,
+283,2017,Austria,McLaren-Honda Formula 1 Team,14,McLaren,MCL32,Honda V6 t h,Pirelli,12,ab,Collision
+284,2017,Britain,McLaren-Honda Formula 1 Team,14,McLaren,MCL32,Honda V6 t h,Pirelli,20,ab,Power loss
+285,2017,Hungary,McLaren-Honda Formula 1 Team,14,McLaren,MCL32,Honda V6 t h,Pirelli,7,6,
+286,2017,Belgium,McLaren-Honda Formula 1 Team,14,McLaren,MCL32,Honda V6 t h,Pirelli,10,ab,Power loss
+287,2017,Italy,McLaren-Honda Formula 1 Team,14,McLaren,MCL32,Honda V6 t h,Pirelli,19,17,Gearbox
+288,2017,Singapore,McLaren-Honda Formula 1 Team,14,McLaren,MCL32,Honda V6 t h,Pirelli,8,ab,Damages
+289,2017,Malaysia,McLaren-Honda Formula 1 Team,14,McLaren,MCL32,Honda V6 t h,Pirelli,10,11,
+290,2017,Japan,McLaren-Honda Formula 1 Team,14,McLaren,MCL32,Honda V6 t h,Pirelli,20,11,
+291,2017,USA,McLaren-Honda Formula 1 Team,14,McLaren,MCL32,Honda V6 t h,Pirelli,8,ab,Engine
+292,2017,Mexico,McLaren-Honda Formula 1 Team,14,McLaren,MCL32,Honda V6 t h,Pirelli,18,10,
+293,2017,Brazil,McLaren-Honda Formula 1 Team,14,McLaren,MCL32,Honda V6 t h,Pirelli,6,8,
+294,2017,Abu Dhabi,McLaren-Honda Formula 1 Team,14,McLaren,MCL32,Honda V6 t h,Pirelli,11,9,
+295,2018,Australia,McLaren F1 Team,14,McLaren,MCL33,Renault V6 t h,Pirelli,10,5,
+296,2018,Bahrain,McLaren F1 Team,14,McLaren,MCL33,Renault V6 t h,Pirelli,13,7,
+297,2018,China,McLaren F1 Team,14,McLaren,MCL33,Renault V6 t h,Pirelli,13,7,
+298,2018,Azerbaijan,McLaren F1 Team,14,McLaren,MCL33,Renault V6 t h,Pirelli,12,7,
+299,2018,Spain,McLaren F1 Team,14,McLaren,MCL33,Renault V6 t h,Pirelli,8,8,
+300,2018,Monaco,McLaren F1 Team,14,McLaren,MCL33,Renault V6 t h,Pirelli,7,ab,Gearbox
+301,2018,Canada,McLaren F1 Team,14,McLaren,MCL33,Renault V6 t h,Pirelli,14,ab,Exhaust
+302,2018,France,McLaren F1 Team,14,McLaren,MCL33,Renault V6 t h,Pirelli,16,16,Suspension
+303,2018,Austria,McLaren F1 Team,14,McLaren,MCL33,Renault V6 t h,Pirelli,20,8,
+304,2018,Britain,McLaren F1 Team,14,McLaren,MCL33,Renault V6 t h,Pirelli,13,8,
+305,2018,Germany,McLaren F1 Team,14,McLaren,MCL33,Renault V6 t h,Pirelli,11,16,Gearbox
+306,2018,Hungary,McLaren F1 Team,14,McLaren,MCL33,Renault V6 t h,Pirelli,11,8,
+307,2018,Belgium,McLaren F1 Team,14,McLaren,MCL33,Renault V6 t h,Pirelli,14,ab,Pile-up
+308,2018,Italy,McLaren F1 Team,14,McLaren,MCL33,Renault V6 t h,Pirelli,13,ab,Electrics
+309,2018,Singapore,McLaren F1 Team,14,McLaren,MCL33,Renault V6 t h,Pirelli,11,7,
+310,2018,Russia,McLaren F1 Team,14,McLaren,MCL33,Renault V6 t h,Pirelli,16,14,
+311,2018,Japan,McLaren F1 Team,14,McLaren,MCL33,Renault V6 t h,Pirelli,18,14,
+312,2018,USA,McLaren F1 Team,14,McLaren,MCL33,Renault V6 t h,Pirelli,13,ab,Collision
+313,2018,Mexico,McLaren F1 Team,14,McLaren,MCL33,Renault V6 t h,Pirelli,12,ab,Overheating
+314,2018,Brazil,McLaren F1 Team,14,McLaren,MCL33,Renault V6 t h,Pirelli,17,17,5s penalty
+315,2018,Abu Dhabi,McLaren F1 Team,14,McLaren,MCL33,Renault V6 t h,Pirelli,15,11,5s penalty
+316,2021,Bahrain,Alpine F1 Team,14,Alpine,A521,Renault V6 t h,Pirelli,9,ab,Brakes
+317,2021,Emilia-Romagna,Alpine F1 Team,14,Alpine,A521,Renault V6 t h,Pirelli,15,10,
+318,2021,Portugal,Alpine F1 Team,14,Alpine,A521,Renault V6 t h,Pirelli,13,8,
+319,2021,Spain,Alpine F1 Team,14,Alpine,A521,Renault V6 t h,Pirelli,10,17,
+320,2021,Monaco,Alpine F1 Team,14,Alpine,A521,Renault V6 t h,Pirelli,17,13,
+321,2021,Azerbaijan,Alpine F1 Team,14,Alpine,A521,Renault V6 t h,Pirelli,8,6,
+322,2021,France,Alpine F1 Team,14,Alpine,A521,Renault V6 t h,Pirelli,9,8,
+323,2021,Styria,Alpine F1 Team,14,Alpine,A521,Renault V6 t h,Pirelli,8,9,
+324,2021,Austria,Alpine F1 Team,14,Alpine,A521,Renault V6 t h,Pirelli,14,10,
+325,2021,Britain,Alpine F1 Team,14,Alpine,A521,Renault V6 t h,Pirelli,7,7,
+326,2021,Hungary,Alpine F1 Team,14,Alpine,A521,Renault V6 t h,Pirelli,9,4,
+327,2021,Belgium,Alpine F1 Team,14,Alpine,A521,Renault V6 t h,Pirelli,12,11,
+328,2021,Netherlands,Alpine F1 Team,14,Alpine,A521,Renault V6 t h,Pirelli,9,6,
+329,2021,Italy,Alpine F1 Team,14,Alpine,A521,Renault V6 t h,Pirelli,10,8,
+330,2021,Russia,Alpine F1 Team,14,Alpine,A521,Renault V6 t h,Pirelli,6,6,
+331,2021,Turkey,Alpine F1 Team,14,Alpine,A521,Renault V6 t h,Pirelli,5,16,
+332,2021,USA,Alpine F1 Team,14,Alpine,A521,Renault V6 t h,Pirelli,19,ab,Wing
+333,2021,Mexico City,Alpine F1 Team,14,Alpine,A521,Renault V6 t h,Pirelli,12,9,
+334,2021,São Paulo,Alpine F1 Team,14,Alpine,A521,Renault V6 t h,Pirelli,12,9,
+335,2021,Qatar,Alpine F1 Team,14,Alpine,A521,Renault V6 t h,Pirelli,3,3,
+336,2021,Saudi Arabia,Alpine F1 Team,14,Alpine,A521,Renault V6 t h,Pirelli,13,13,
+337,2021,Abu Dhabi,Alpine F1 Team,14,Alpine,A521,Renault V6 t h,Pirelli,11,8,
+338,2022,Bahrain,BWT Alpine F1 Team,14,Alpine,A522,Renault V6 t h,Pirelli,8,9,
+339,2022,Saudi Arabia,BWT Alpine F1 Team,14,Alpine,A522,Renault V6 t h,Pirelli,7,ab,Engine
+340,2022,Australia,BWT Alpine F1 Team,14,Alpine,A522,Renault V6 t h,Pirelli,10,17,
+341,2022,Emilia-Romagna,BWT Alpine F1 Team,14,Alpine,A522,Renault V6 t h,Pirelli,9,ab,Fairing
+342,2022,Miami,BWT Alpine F1 Team,14,Alpine,A522,Renault V6 t h,Pirelli,11,11,10s penalty
+343,2022,Spain,BWT Alpine F1 Team,14,Alpine,A522,Renault V6 t h,Pirelli,20,9,
+344,2022,Monaco,BWT Alpine F1 Team,14,Alpine,A522,Renault V6 t h,Pirelli,7,7,
+345,2022,Azerbaijan,BWT Alpine F1 Team,14,Alpine,A522,Renault V6 t h,Pirelli,10,7,
+346,2022,Canada,BWT Alpine F1 Team,14,Alpine,A522,Renault V6 t h,Pirelli,2,9,5s penalty
+347,2022,Britain,BWT Alpine F1 Team,14,Alpine,A522,Renault V6 t h,Pirelli,7,5,
+348,2022,Austria,BWT Alpine F1 Team,14,Alpine,A522,Renault V6 t h,Pirelli,19,10,
+349,2022,France,BWT Alpine F1 Team,14,Alpine,A522,Renault V6 t h,Pirelli,7,6,
+350,2022,Hungary,BWT Alpine F1 Team,14,Alpine,A522,Renault V6 t h,Pirelli,6,8,
+351,2022,Belgium,BWT Alpine F1 Team,14,Alpine,A522,Renault V6 t h,Pirelli,3,5,
+352,2022,Netherlands,BWT Alpine F1 Team,14,Alpine,A522,Renault V6 t h,Pirelli,13,6,
+353,2022,Italy,BWT Alpine F1 Team,14,Alpine,A522,Renault V6 t h,Pirelli,6,ab,Water pressure
+354,2022,Singapore,BWT Alpine F1 Team,14,Alpine,A522,Renault V6 t h,Pirelli,5,ab,Engine
+355,2022,Japan,BWT Alpine F1 Team,14,Alpine,A522,Renault V6 t h,Pirelli,7,7,
+356,2022,USA,BWT Alpine F1 Team,14,Alpine,A522,Renault V6 t h,Pirelli,14,7,
+357,2022,Mexico City,BWT Alpine F1 Team,14,Alpine,A522,Renault V6 t h,Pirelli,9,19,Engine
+358,2022,São Paulo,BWT Alpine F1 Team,14,Alpine,A522,Renault V6 t h,Pirelli,17,5,
+359,2022,Abu Dhabi,BWT Alpine F1 Team,14,Alpine,A522,Renault V6 t h,Pirelli,10,ab,Water leak
+360,2023,Bahrain,Aston Martin Aramco Cognizant F1 Team,14,Aston Martin,AMR23,Mercedes V6 t h,Pirelli,5,3,
+361,2023,Saudi Arabia,Aston Martin Aramco Cognizant F1 Team,14,Aston Martin,AMR23,Mercedes V6 t h,Pirelli,2,3,
+362,2023,Australia,Aston Martin Aramco Cognizant F1 Team,14,Aston Martin,AMR23,Mercedes V6 t h,Pirelli,4,3,
+363,2023,Azerbaijan,Aston Martin Aramco Cognizant F1 Team,14,Aston Martin,AMR23,Mercedes V6 t h,Pirelli,6,4,
+364,2023,Miami,Aston Martin Aramco Cognizant F1 Team,14,Aston Martin,AMR23,Mercedes V6 t h,Pirelli,2,3,
+365,2023,Monaco,Aston Martin Aramco Cognizant F1 Team,14,Aston Martin,AMR23,Mercedes V6 t h,Pirelli,2,2,
+366,2023,Spain,Aston Martin Aramco Cognizant F1 Team,14,Aston Martin,AMR23,Mercedes V6 t h,Pirelli,8,7,
+367,2023,Canada,Aston Martin Aramco Cognizant F1 Team,14,Aston Martin,AMR23,Mercedes V6 t h,Pirelli,2,2,
+368,2023,Austria,Aston Martin Aramco Cognizant F1 Team,14,Aston Martin,AMR23,Mercedes V6 t h,Pirelli,7,5,
+369,2023,Britain,Aston Martin Aramco Cognizant F1 Team,14,Aston Martin,AMR23,Mercedes V6 t h,Pirelli,9,7,
+370,2023,Hungary,Aston Martin Aramco Cognizant F1 Team,14,Aston Martin,AMR23,Mercedes V6 t h,Pirelli,8,9,
+371,2023,Belgium,Aston Martin Aramco Cognizant F1 Team,14,Aston Martin,AMR23,Mercedes V6 t h,Pirelli,9,5,
+372,2023,Netherlands,Aston Martin Aramco Cognizant F1 Team,14,Aston Martin,AMR23,Mercedes V6 t h,Pirelli,5,2,
+373,2023,Italy,Aston Martin Aramco Cognizant F1 Team,14,Aston Martin,AMR23,Mercedes V6 t h,Pirelli,10,9,
+374,2023,Singapore,Aston Martin Aramco Cognizant F1 Team,14,Aston Martin,AMR23,Mercedes V6 t h,Pirelli,7,15,
+375,2023,Japan,Aston Martin Aramco Cognizant F1 Team,14,Aston Martin,AMR23,Mercedes V6 t h,Pirelli,10,8,
+376,2023,Qatar,Aston Martin Aramco Cognizant F1 Team,14,Aston Martin,AMR23,Mercedes V6 t h,Pirelli,4,6,
+377,2023,USA,Aston Martin Aramco Cognizant F1 Team,14,Aston Martin,AMR23,Mercedes V6 t h,Pirelli,19,ab,Undertray
+378,2023,Mexico City,Aston Martin Aramco Cognizant F1 Team,14,Aston Martin,AMR23,Mercedes V6 t h,Pirelli,13,ab,Damages
+379,2023,São Paulo,Aston Martin Aramco Cognizant F1 Team,14,Aston Martin,AMR23,Mercedes V6 t h,Pirelli,4,3,
+380,2023,Las Vegas,Aston Martin Aramco Cognizant F1 Team,14,Aston Martin,AMR23,Mercedes V6 t h,Pirelli,9,9,
+381,2023,Abu Dhabi,Aston Martin Aramco Cognizant F1 Team,14,Aston Martin,AMR23,Mercedes V6 t h,Pirelli,7,7,
+382,2024,Bahrain,Aston Martin Aramco F1 Team,14,Aston Martin,AMR24,Mercedes V6 t h,Pirelli,6,9,
+383,2024,Saudi Arabia,Aston Martin Aramco F1 Team,14,Aston Martin,AMR24,Mercedes V6 t h,Pirelli,4,5,
+384,2024,Australia,Aston Martin Aramco F1 Team,14,Aston Martin,AMR24,Mercedes V6 t h,Pirelli,10,8,

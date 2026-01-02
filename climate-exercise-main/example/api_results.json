@@ -1,0 +1,117 @@
+{
+  "timestamp": "2025-12-15T16:26:54.310324",
+  "weather_data": {
+    "coord": {
+      "lon": -0.1257,
+      "lat": 51.5085
+    },
+    "weather": [
+      {
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 11.03,
+      "feels_like": 10.41,
+      "temp_min": 10.57,
+      "temp_max": 11.41,
+      "pressure": 1004,
+      "humidity": 85,
+      "sea_level": 1004,
+      "grnd_level": 1001
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 5.66,
+      "deg": 170
+    },
+    "clouds": {
+      "all": 75
+    },
+    "dt": 1765812076,
+    "sys": {
+      "type": 2,
+      "id": 2075535,
+      "country": "GB",
+      "sunrise": 1765785594,
+      "sunset": 1765813895
+    },
+    "timezone": 0,
+    "id": 2643743,
+    "name": "London",
+    "cod": 200
+  },
+  "population_data": {
+    "data": [
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "US",
+          "value": "United States"
+        },
+        "countryiso3code": "USA",
+        "date": "2023",
+        "value": 336806231,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "US",
+          "value": "United States"
+        },
+        "countryiso3code": "USA",
+        "date": "2022",
+        "value": 334017321,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "US",
+          "value": "United States"
+        },
+        "countryiso3code": "USA",
+        "date": "2021",
+        "value": 332099760,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "US",
+          "value": "United States"
+        },
+        "countryiso3code": "USA",
+        "date": "2020",
+        "value": 331577720,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ],
+    "status": "success"
+  }
+}
