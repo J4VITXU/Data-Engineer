@@ -1,4 +1,3 @@
--- Drop (for dev / reruns)
 DROP TABLE IF EXISTS fact_alonso_race_results;
 DROP TABLE IF EXISTS fact_race_winners;
 DROP TABLE IF EXISTS dim_race;
@@ -6,7 +5,6 @@ DROP TABLE IF EXISTS dim_season;
 DROP TABLE IF EXISTS dim_driver;
 DROP TABLE IF EXISTS dim_team;
 
--- Dimensions
 CREATE TABLE dim_season (
   season_id INTEGER PRIMARY KEY,
   year INTEGER NOT NULL UNIQUE
@@ -15,11 +13,12 @@ CREATE TABLE dim_season (
 CREATE TABLE dim_race (
   race_id INTEGER PRIMARY KEY,
   year INTEGER NOT NULL,
+  race_number INTEGER,           -- derived from winners calendar
   grand_prix VARCHAR NOT NULL,
-  date DATE,
-  circuit VARCHAR,
+  date DATE NOT NULL,
+  circuit VARCHAR NOT NULL,
   continent VARCHAR,
-  UNIQUE(year, grand_prix)
+  UNIQUE(year, date, circuit)    -- THIS fixes Italy 1957 etc.
 );
 
 CREATE TABLE dim_driver (
@@ -32,7 +31,6 @@ CREATE TABLE dim_team (
   team_name VARCHAR NOT NULL UNIQUE
 );
 
--- Facts
 CREATE TABLE fact_race_winners (
   fact_id BIGINT PRIMARY KEY,
   race_id INTEGER NOT NULL,
