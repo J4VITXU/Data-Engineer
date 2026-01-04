@@ -121,5 +121,86 @@ Logs are written both to the console and to `logs/pipeline.log`.
 
 ## Execution Flow
 
-```text
 run_pipeline → load_dw → dw_checks → run_insights
+
+## Scalability (x10 / x100 / x1000 / x10^6)
+
+This project runs locally with **pandas** (transform) + **DuckDB** (warehouse). It works well for small/medium data, but scaling requires changes.
+
+- **x10 rows**
+  - Still OK on a laptop.
+  - Improve by: using **parquet**, avoiding copies in pandas, and pushing some joins/aggregations to DuckDB SQL.
+
+- **x100 rows**
+  - pandas may struggle with RAM and runtime.
+  - Improve by: partition parquet by `year`, and avoid full rebuilds (process only new data).
+
+- **x1000 rows**
+  - Single-machine pipeline becomes a bottleneck.
+  - Proposal: move transforms to **Spark/Dask** and store raw/staging in **object storage** (S3/GCS). Use a cloud warehouse.
+
+- **x10^6 rows**
+  - Needs cloud-native architecture.
+  - Proposal: orchestration (Airflow/Prefect), distributed compute (Spark), and a scalable warehouse (BigQuery/Snowflake/Redshift).
+
+Key idea: to scale, replace **full refresh** with **incremental loads** (only new races/seasons each day).
+
+---
+
+## Cloud Costs
+
+Example provider: **Google Cloud (GCP)**.
+
+**Cloud version architecture**
+- Storage: **GCS** (raw + staging parquet)
+- Compute/orchestration: **Cloud Scheduler + Cloud Run** (or Airflow for bigger scale)
+- Warehouse: **BigQuery**
+- Monitoring: **Cloud Logging + Cloud Monitoring**
+
+**How costs grow**
+- Main cost drivers: **data storage** + **compute time** + **warehouse queries scanned**.
+- Rough scaling (relative):
+  - x10: Low → Medium
+  - x100: Medium → High
+  - x1000: High → Very High
+  - x10^6: Very High (needs strict cost control)
+
+**Cost control tips**
+- Partition/cluster tables by `year`
+- Use parquet + partitions (scan less data)
+- Incremental loads (avoid rebuilding everything)
+- Avoid `SELECT *` in analytics
+
+---
+
+## Data Consumers
+
+Who can use the data?
+- **Students/analysts**: run SQL on the warehouse
+- **BI dashboards**: charts and reports (e.g., Looker Studio)
+- **Developers**: export tables/views to build apps or notebooks
+
+How to deliver it?
+- Locally: DuckDB + SQL queries
+- Cloud: BigQuery connected to Looker Studio
+
+---
+
+## How AI Can Help
+
+AI can help with:
+- **Data quality**: detect anomalies (missing races, weird spikes in DNFs)
+- **Normalization**: suggest mapping for team/driver name variants
+- **Monitoring**: summarize logs and highlight failures
+- **Insights**: generate plain-English explanations for non-technical users
+
+---
+
+## Privacy
+
+This project uses **public Formula 1 historical data**, so privacy risk is low.
+
+Good practices anyway:
+- keep data read-only, avoid publishing unnecessary raw files
+- if future versions include user data, apply GDPR-style controls (access control, encryption, minimization)
+
