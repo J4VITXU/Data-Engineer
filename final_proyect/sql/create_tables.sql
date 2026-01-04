@@ -13,12 +13,12 @@ CREATE TABLE dim_season (
 CREATE TABLE dim_race (
   race_id INTEGER PRIMARY KEY,
   year INTEGER NOT NULL,
-  race_number INTEGER,           -- derived from winners calendar
+  race_number INTEGER,
   grand_prix VARCHAR NOT NULL,
   date DATE NOT NULL,
   circuit VARCHAR NOT NULL,
   continent VARCHAR,
-  UNIQUE(year, date, circuit)    -- THIS fixes Italy 1957 etc.
+  UNIQUE(year, date, circuit)
 );
 
 CREATE TABLE dim_driver (

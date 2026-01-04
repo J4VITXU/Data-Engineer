@@ -32,9 +32,7 @@ def main():
     # Si tu CSV dice 384 participaciones:
     assert alonso_facts == 384, f"Expected 384 Alonso participations, got {alonso_facts}"
 
-    # -----------------------------
     # 2) FK checks (los tuyos + completos)
-    # -----------------------------
     fk_winners_race = con.execute("""
       SELECT COUNT(*)
       FROM fact_race_winners f
@@ -84,9 +82,6 @@ def main():
     assert fk_alonso_team == 0, f"Missing dim_team for alonso facts: {fk_alonso_team}"
     assert fk_alonso_driver == 0, f"Missing dim_driver for alonso facts: {fk_alonso_driver}"
 
-    # -----------------------------
-    # 3) Grano / duplicados
-    # -----------------------------
     # 3a) dim_race clave única (year,date,circuit) ya tiene UNIQUE, pero lo comprobamos
     dup_races = con.execute("""
       SELECT COUNT(*)
@@ -112,7 +107,6 @@ def main():
     assert dup_alonso_race == 0, f"Duplicate Alonso rows per race_id: {dup_alonso_race}"
 
     # 3c) fact_winners: puede haber >1 por carrera, pero nunca debería ser 0 por carrera
-    # (esta es una check suave: cuenta carreras del calendario sin winner asociado)
     races_without_winner = con.execute("""
       SELECT COUNT(*)
       FROM dim_race r

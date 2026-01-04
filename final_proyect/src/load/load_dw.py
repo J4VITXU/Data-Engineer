@@ -43,7 +43,6 @@ def load_dimensions(
     alonso = alonso.copy()
     winners = winners.copy()
 
-    # ---- types + normalization
     # Alonso
     alonso["year"] = pd.to_numeric(alonso["year"], errors="coerce").astype("Int64")
     alonso["team"] = _norm_text(alonso.get("team", pd.Series(dtype="object")))
@@ -61,7 +60,7 @@ def load_dimensions(
     winners["team"] = _norm_text(winners.get("team", pd.Series(dtype="object")))
     winners["winner_name"] = _norm_text(winners.get("winner_name", pd.Series(dtype="object")))
 
-    # ---------------- dim_season
+    # dim_season
     years = pd.concat([alonso[["year"]], winners[["year"]]], ignore_index=True).dropna()
     years = years.drop_duplicates().sort_values("year").reset_index(drop=True)
     years["season_id"] = range(1, len(years) + 1)
@@ -69,7 +68,7 @@ def load_dimensions(
     con.register("tmp_years", years)
     con.execute("INSERT INTO dim_season (season_id, year) SELECT season_id, year FROM tmp_years")
 
-    # ---------------- dim_race
+    # dim_race
     # 1 fila = 1 carrera real => clave única (year, date, circuit)
     w_cal = winners[["year", "date", "circuit", "grand_prix", "continent"]].dropna(subset=["year", "date", "circuit"]).copy()
 
@@ -93,7 +92,7 @@ def load_dimensions(
         FROM tmp_races
     """)
 
-    # ---------------- dim_driver
+    # dim_driver
     drivers = pd.concat(
         [winners["winner_name"].dropna(), pd.Series(["Fernando Alonso"])],
         ignore_index=True
@@ -105,7 +104,7 @@ def load_dimensions(
     con.register("tmp_drivers", dim_driver_df)
     con.execute("INSERT INTO dim_driver (driver_id, driver_name) SELECT driver_id, driver_name FROM tmp_drivers")
 
-    # ---------------- dim_team
+    # dim_team
     teams = pd.concat([alonso["team"].dropna(), winners["team"].dropna()], ignore_index=True)
     teams = teams.drop_duplicates().sort_values().reset_index(drop=True)
 
@@ -118,9 +117,7 @@ def load_dimensions(
     return alonso
 
 
-# -------------------------
 # Facts
-# -------------------------
 def load_facts(
     con: duckdb.DuckDBPyConnection,
     alonso: pd.DataFrame,
@@ -144,7 +141,7 @@ def load_facts(
     con.register("stg_winners", winners)
     con.register("stg_alonso", alonso)
 
-    # ---- fact_race_winners
+    # fact_race_winners
     con.execute("""
         INSERT INTO fact_race_winners
         SELECT
@@ -167,7 +164,7 @@ def load_facts(
         WHERE w.year IS NOT NULL AND w.date IS NOT NULL AND w.circuit IS NOT NULL
     """)
 
-    # ---- fact_alonso_race_results
+    # fact_alonso_race_results
     con.execute("""
         INSERT INTO fact_alonso_race_results
         SELECT
@@ -211,7 +208,6 @@ def main():
     alonso_clean = load_dimensions(con, alonso, winners)
     load_facts(con, alonso_clean, winners)
 
-    # Checks finales
     counts = con.execute("""
       SELECT
         (SELECT COUNT(*) FROM dim_season) AS seasons,
