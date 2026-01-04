@@ -2,6 +2,9 @@ from pathlib import Path
 import duckdb
 import pandas as pd
 
+from src.logging_setup import setup_logging
+import logging
+    
 SQL_DIR = Path("sql")
 PROCESSED_DIR = Path("data/processed")
 WAREHOUSE_DIR = Path("warehouse")
@@ -192,6 +195,10 @@ def load_facts(
 
 
 def main():
+    setup_logging()
+    logger = logging.getLogger("load.load_dw")
+    logger.info("Loading Data Warehouse")
+    
     WAREHOUSE_DIR.mkdir(parents=True, exist_ok=True)
 
     alonso = _read_parquet(PROCESSED_DIR / "alonso_clean.parquet")
@@ -218,6 +225,7 @@ def main():
 
     print("DW created at:", DB_PATH)
     print(counts.to_string(index=False))
+    logger.info("DW load completed")
     con.close()
 
 

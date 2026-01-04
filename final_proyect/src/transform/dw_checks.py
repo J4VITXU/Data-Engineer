@@ -1,9 +1,15 @@
 import duckdb
 from pathlib import Path
 
+from src.logging_setup import setup_logging
+import logging
+
 DB_PATH = Path("warehouse/dw.duckdb")
 
 def main():
+    setup_logging()
+    logger = logging.getLogger("quality.dw_checks")
+    logger.info("Starting DW checks")
     con = duckdb.connect(str(DB_PATH))
 
     counts = con.execute("""

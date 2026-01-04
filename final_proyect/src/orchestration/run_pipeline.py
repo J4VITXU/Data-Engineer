@@ -1,4 +1,5 @@
 from pathlib import Path
+import logging
 
 from src.logging_setup import setup_logging
 from src.extract.extract_raw import extract_raw
@@ -10,7 +11,8 @@ RAW_DIR = Path("data/raw")
 OUT_DIR = Path("data/processed")
 
 def main():
-    logger = setup_logging()
+    setup_logging()
+    logger = logging.getLogger("orchestration.run_pipeline")
 
     logger.info("Starting pipeline...")
     OUT_DIR.mkdir(parents=True, exist_ok=True)

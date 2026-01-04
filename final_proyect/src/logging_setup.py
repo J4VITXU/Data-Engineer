@@ -1,26 +1,29 @@
 import logging
 from pathlib import Path
 
-def setup_logging(log_dir: Path = Path("logs")) -> logging.Logger:
+def setup_logging(log_dir: Path = Path("logs"), level=logging.INFO) -> None:
     log_dir.mkdir(parents=True, exist_ok=True)
     log_file = log_dir / "pipeline.log"
 
-    logger = logging.getLogger("pipeline")
-    logger.setLevel(logging.INFO)
+    root = logging.getLogger()
+    root.setLevel(level)
 
-    # avoid duplicated handlers if re-run in same session
-    if not logger.handlers:
-        fmt = logging.Formatter("%(asctime)s | %(levelname)s | %(message)s")
+    # evita duplicados
+    if root.handlers:
+        return
 
-        fh = logging.FileHandler(log_file, encoding="utf-8")
-        fh.setFormatter(fmt)
-        fh.setLevel(logging.INFO)
+    fmt = logging.Formatter(
+        "%(asctime)s | %(levelname)-7s | %(name)s | %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S"
+    )
 
-        sh = logging.StreamHandler()
-        sh.setFormatter(fmt)
-        sh.setLevel(logging.INFO)
+    fh = logging.FileHandler(log_file, encoding="utf-8")
+    fh.setFormatter(fmt)
+    fh.setLevel(level)
 
-        logger.addHandler(fh)
-        logger.addHandler(sh)
+    sh = logging.StreamHandler()
+    sh.setFormatter(fmt)
+    sh.setLevel(level)
 
-    return logger
+    root.addHandler(fh)
+    root.addHandler(sh)
