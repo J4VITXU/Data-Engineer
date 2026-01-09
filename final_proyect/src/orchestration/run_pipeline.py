@@ -14,7 +14,7 @@ def main():
     setup_logging()
     logger = logging.getLogger("orchestration.run_pipeline")
 
-    logger.info("Starting pipeline...")
+    logger.info("Starting pipeline: extract -> transform -> quality checks -> parquet")
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     logger.info("Extracting raw data...")
