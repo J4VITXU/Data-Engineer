@@ -43,7 +43,6 @@ Responsible for data cleaning, normalization and validation.
 
 - `clean_alonso.py`
 - `clean_winners.py`
-- `dw_checks.py` (Data Warehouse validation)
 
 Transformations are applied before loading data into the Data Warehouse.
 
@@ -57,6 +56,7 @@ Responsible for loading processed data into DuckDB.
 - `load_dw.py`
   - Creates dimension and fact tables
   - Enforces consistent grain and relationships
+- `dw_checks.py` (Data Warehouse validation)
 
 The Data Warehouse is rebuilt from scratch on each execution.
 
