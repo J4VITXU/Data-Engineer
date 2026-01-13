@@ -26,13 +26,13 @@ def main():
     print(f"seasons={seasons} races={races} drivers={drivers} teams={teams} "
           f"winners_facts={winners_facts} alonso_facts={alonso_facts}")
 
-    # checks “esperados” (ajusta si tu dataset cambia)
+    # checks “esperados”
     assert races > 0 and seasons > 0 and drivers > 0 and teams > 0, "Empty dimensions? Load failed."
     assert winners_facts >= races, "Winners facts should be >= races (shared wins possible)."
-    # Si tu CSV dice 384 participaciones:
+    # Si CSV dice 384 participaciones:
     assert alonso_facts == 384, f"Expected 384 Alonso participations, got {alonso_facts}"
 
-    # 2) FK checks (los tuyos + completos)
+    # 2) FK checks
     fk_winners_race = con.execute("""
       SELECT COUNT(*)
       FROM fact_race_winners f
